@@ -53,7 +53,7 @@ const FloatingContactIcons = () => {
     <div className="fixed right-4 top-[35%] md:top-[45%] flex flex-col gap-4 z-50">
       {/* Phone Icon */}
       <a
-        href="tel:+919392612314"
+        href="tel:+919014865154"
         className="group"
         aria-label="Call Phone"
         target="_blank"
