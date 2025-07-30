@@ -6,9 +6,9 @@ import BlogCard from './BlogCard';
 import BlogArchive from './BlogArchive';
 import BlogPagination from './BlogPagination';
 import BlogStats from './BlogStats';
-import { blogPosts } from '../../data/blogPosts';
 
-import defaultBlogs from '../../data/Blogs.js';
+
+
 import LoginModal from './LoginModal';
 import CreateBlog from './CreateBlog';
 import EditBlog from './EditBlog';
