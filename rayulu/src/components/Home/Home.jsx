@@ -1,13 +1,21 @@
 import React from 'react';
 import TestimonialCarousel from '../Testimonials/Testimonial';
-import TwoServiceBoxes from '../Services/Services';
+
 import ClientsCarousel from '../OurClients/Clients';
+import Banner from './Banner';
+import HomeFlipCards from './HomeBookNow';
+import CorporateServices from '../CorporateCarpetCleaning/CorporateServices';
+import HomeForm from './HomeForm';
 
 const Home = () => {
   return (
     <div>
+      
       <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4 py-8">
-        <div className="w-full max-w-4xl mx-auto">
+        <Banner />
+        <HomeForm />
+        <CorporateServices />
+        {/* <div className="w-full max-w-4xl mx-auto">
     
           <div className="text-center mb-8 md:mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-orange-400 mb-4">
@@ -34,9 +42,10 @@ const Home = () => {
               PCS Care was established with the aim of providing the state-of-the-art services to Offices/Homes using the best machinery and chemicals available. In an otherwise unorganized sector, we provide professional service so as to take best care your carpets, upholstery, floors etc. using eco-friendly, bio-degradable chemicals.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
-      <TwoServiceBoxes />
+      <HomeFlipCards />
+      
       
     </div>
   );

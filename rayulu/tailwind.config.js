@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+
+      
+
       keyframes: {
         slide: {
           "0%": { transform: "translateX(0)" },
@@ -25,6 +28,8 @@ animation: {
       crimson: ['"Crimson Text"', 'serif'],
     },
   },
-  plugins: [],
+  plugins: [
+    require("flowbite/plugin")
+  ],
 }
 

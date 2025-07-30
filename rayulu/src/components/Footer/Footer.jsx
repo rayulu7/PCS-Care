@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaFacebookF, FaTwitter, FaInstagram, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
@@ -6,21 +7,26 @@ const Footer = () => {
     <footer className="bg-[#f1f3fa] text-[#1a1a1a] py-10 px-5 md:px-20">
       <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 md:gap-10">
         
-   
         <div className="flex flex-col items-center md:items-start w-full md:w-auto">
           <img src="/logo.png" alt="PCS Care" className="w-20 h-20 mb-3" />
         </div>
 
-  
         <div className="w-full md:w-auto text-center md:text-left">
           <h2 className="text-lg font-semibold text-[#2c2c54] mb-3 md:mb-2">Our Links</h2>
           <ul className="space-y-2">
-            <li className="font-bold hover:text-orange-500 cursor-pointer transition-colors">Partner with us</li>
-            <li className="font-bold hover:text-orange-500 cursor-pointer transition-colors">Blog</li>
+            <li>
+              <Link to="/partner" className="font-bold hover:text-orange-500 cursor-pointer transition-colors block">
+                Partner with us
+              </Link>
+            </li>
+            <li>
+              <Link to="/blog" className="font-bold hover:text-orange-500 cursor-pointer transition-colors block">
+                Blog
+              </Link>
+            </li>
           </ul>
         </div>
 
-    
         <div className="w-full md:w-auto text-center md:text-left">
           <h2 className="text-lg font-semibold text-[#2c2c54] mb-3 md:mb-2">Get In Touch</h2>
           <div className="space-y-2">
@@ -39,23 +45,21 @@ const Footer = () => {
           </div>
         </div>
 
-     
         <div className="flex justify-center space-x-4 w-full md:w-auto">
-          <a href="#" className="w-8 h-8 rounded-full border border-black flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300">
+          <Link to="#" className="w-8 h-8 rounded-full border border-black flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300">
             <FaFacebookF />
-          </a>
-          <a href="#" className="w-8 h-8 rounded-full border border-black flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300">
+          </Link>
+          <Link to="#" className="w-8 h-8 rounded-full border border-black flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300">
             <FaTwitter />
-          </a>
-          <a href="#" className="w-8 h-8 rounded-full border border-black flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300">
+          </Link>
+          <Link to="#" className="w-8 h-8 rounded-full border border-black flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300">
             <FaInstagram />
-          </a>
+          </Link>
         </div>
       </div>
 
       <hr className="my-6 border-gray-300" />
 
-     
       <div className="text-center text-sm">
         Copyright © 2024 <span className="text-orange-500 font-semibold">PCS Care</span> All Rights Reserved
       </div>

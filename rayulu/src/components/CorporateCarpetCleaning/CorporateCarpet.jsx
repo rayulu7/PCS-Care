@@ -4,9 +4,14 @@ import ContactForm from '../Form/Form';
 import ClientsCarousel from '../OurClients/Clients';
 import TestimonialCarousel from '../Testimonials/Testimonial';
 import Footer from '../Footer/Footer';
-import CarpetCleaningTypes from './Carpet2';
+import CorporateCarpetCleaningTypes from './CorporateCarpet2';
+import CorporateCarpetExpectSection from './CorporateCarpetExpectation';
+import ChooseUs from '../Form/ChooseUs';
+import CorporateCarpetQuestions from './CorporateCarpetQuestions';
 
-const CarpetCleaningService = () => {
+
+
+const CorporateCarpetCleaningService = () => {
   const features = [
     "19+ Years of Professional Cleaning Experience",
     "100% Guaranteed Satisfaction",
@@ -61,9 +66,12 @@ const CarpetCleaningService = () => {
         </div>
       </div>
     </div>
-    <CarpetCleaningTypes />
+    <CorporateCarpetCleaningTypes />
+    <CorporateCarpetExpectSection />
+    <ChooseUs />
+    <CorporateCarpetQuestions />
     </div>
   );
 };
 
-export default CarpetCleaningService;
+export default CorporateCarpetCleaningService;

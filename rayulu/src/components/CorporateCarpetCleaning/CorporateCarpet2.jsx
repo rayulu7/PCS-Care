@@ -1,8 +1,10 @@
 
 import React from 'react';
 
+import CorporateCities from './CorporateCities.jsx'
+import CorporateCarpetAreasSection from './CorporateCarpetArea.jsx';
 
-const CarpetCleaningTypes = () => {
+const CorporateCarpetCleaningTypes = () => {
   const services = [
     {
       id: 1,
@@ -28,6 +30,8 @@ const CarpetCleaningTypes = () => {
   ];
 
   const ServiceCard = ({ service }) => (
+     
+     
     <div
       className="
         group
@@ -84,6 +88,7 @@ const CarpetCleaningTypes = () => {
   );
 
   return (
+    <>
     <div className="py-12">
     
       <div className="text-center mb-8">
@@ -99,7 +104,10 @@ const CarpetCleaningTypes = () => {
         ))}
       </div>
     </div>
+    <CorporateCities />
+    <CorporateCarpetAreasSection />
+   </>
   );
 };
 
-export default CarpetCleaningTypes;
+export default CorporateCarpetCleaningTypes;

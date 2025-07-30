@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ChooseUs from './ChooseUs';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -31,8 +32,9 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto my-12 p-6 bg-white shadow-md rounded-lg">
-      <h1 className="text-3xl font-bold text-center mb-2">Professional Commercial & Office Marble Polishing Services In India</h1>
+    <>
+    <div className="max-w-4xl mx-auto my-12 p-6 bg-white shadow-md rounded-lg mt-2">
+      <h1 className="text-3xl font-bold text-center mb-2">Professional Carpet Cleaning Services for Corporate & Commercial Spaces</h1>
       <p className="text-center text-gray-600 mb-8">Hyderabad - Bengaluru - Pune - Mumbai - Chennai</p>
       
       <div className="border-t-2 border-gray-200 pt-8">
@@ -104,6 +106,9 @@ const ContactForm = () => {
         </form>
       </div>
     </div>
+
+    
+    </>
   );
 };
 
