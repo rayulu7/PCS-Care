@@ -70,7 +70,7 @@ const ServiceCard = ({ image, title, description, link }) => {
           Read More
         </button>
       </div>
-      {/* Hover overlay only for background, not image */}
+      
       <div className="absolute inset-0 rounded-xl pointer-events-none transition-colors duration-200 group-hover:bg-[#fd7e14] z-0" />
     </div>
   );
@@ -83,19 +83,18 @@ const CorporateServices = () => (
     <div className="max-w-7xl mx-auto px-2 sm:px-4">
       <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">Our Services</h2>
       <div className="flex flex-col gap-10">
-        {/* First row: 3 cards */}
+        
         <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 justify-center">
           {cardData.slice(0, 3).map((card, idx) => (
             <ServiceCard key={idx} {...card} />
           ))}
         </div>
-        {/* Second row: 3 cards */}
         <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 justify-center">
           {cardData.slice(3, 6).map((card, idx) => (
             <ServiceCard key={idx + 3} {...card} />
           ))}
         </div>
-        {/* Last row: 1 card */}
+       
         <div className="flex justify-center">
           <div className="w-full sm:w-auto">
             <ServiceCard {...cardData[6]} />

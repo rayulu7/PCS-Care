@@ -1,4 +1,4 @@
-// src/components/Blog/BlogList.jsx
+
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Plus, LogOut, Settings, UserCog } from 'lucide-react'
@@ -14,7 +14,7 @@ export default function BlogList() {
 
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem('blogs') || '[]')
-    // show admin posts first:
+    
     setPosts([...saved, ...defaultBlogs])
   }, [])
 
@@ -46,7 +46,7 @@ export default function BlogList() {
     setShowCreateBlog(false)
   }
 
-  // Check if user is already logged in
+ 
   useEffect(() => {
     const adminStatus = localStorage.getItem('isAdmin')
     if (adminStatus === 'true') {
@@ -65,7 +65,7 @@ export default function BlogList() {
 
   return (
     <section className="py-16 bg-gray-50">
-      {/* Floating Admin Login Button (icon only, left side) */}
+      
       {!isAdmin && (
         <button
           onClick={() => setShowLoginModal(true)}
@@ -77,7 +77,7 @@ export default function BlogList() {
         </button>
       )}
       <div className="max-w-4xl mx-auto px-4">
-        {/* Header with Admin Controls */}
+       
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-4xl font-bold text-gray-800">
             Our Blog
@@ -104,7 +104,7 @@ export default function BlogList() {
           </div>
         </div>
 
-        {/* Blog Posts List */}
+       
         <ul className="space-y-6">
           {posts.map(post => (
             <li
@@ -136,7 +136,7 @@ export default function BlogList() {
         </ul>
       </div>
 
-      {/* Login Modal */}
+      
       <LoginModal
         isOpen={showLoginModal}
         onClose={() => setShowLoginModal(false)}

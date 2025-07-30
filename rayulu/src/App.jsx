@@ -18,7 +18,7 @@ import Homecarpet from './components/HomeServices/HomeCarpetCleaning/HomeCarpet'
 import HomeMarble from './components/HomeServices/HomeMarblePolishing/HomeMarble';
 
 
-// ✅ ADD THIS
+
 import { BlogProvider } from './context/BlogContext';
 
 import DocumentTitle from './DocumentTitle';
@@ -44,14 +44,14 @@ const ScrollToTop = () => {
 };
 
 const FloatingContactIcons = () => {
-  // Back-to-top button logic
+  
   const handleBackToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
     <div className="fixed right-4 top-[35%] md:top-[45%] flex flex-col gap-4 z-50">
-      {/* Phone Icon */}
+      
       <a
         href="tel:+919014865154"
         className="group"
@@ -63,7 +63,7 @@ const FloatingContactIcons = () => {
           <FaPhoneAlt className="text-white text-2xl" />
         </div>
       </a>
-      {/* WhatsApp Icon */}
+      
       <a
         href="https://wa.me/919014865154"
         className="group"
@@ -75,7 +75,7 @@ const FloatingContactIcons = () => {
           <FaWhatsapp className="text-white text-2xl" />
         </div>
       </a>
-      {/* Chatbot Icon */}
+      
       <a
         href="#"
         className="group"
@@ -87,7 +87,7 @@ const FloatingContactIcons = () => {
           <FaCommentDots className="text-white text-2xl" />
         </div>
       </a>
-      {/* Back-to-top Button */}
+      
       <button
         onClick={handleBackToTop}
         aria-label="Back to Top"
@@ -105,7 +105,7 @@ const FloatingContactIcons = () => {
 const App = () => {
   return (
     <BrowserRouter>
-      <BlogProvider> {/* ✅ Wrap everything that uses useBlogContext */}
+      <BlogProvider> 
         <ScrollToTop />
         <DocumentTitle />
         <div className="app-wrapper">

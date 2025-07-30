@@ -5,7 +5,7 @@ const Digit = ({ value, isActive }) => {
 
   useEffect(() => {
     if (isActive) {
-      const duration = 2000; // 2 seconds animation
+      const duration = 2000; 
       const startTime = Date.now();
       
       const animate = () => {

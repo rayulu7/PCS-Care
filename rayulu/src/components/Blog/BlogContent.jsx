@@ -2,9 +2,9 @@ import React from 'react';
 import { Phone } from 'lucide-react';
 
 const BlogContent = ({ post }) => {
-  // Render a single element from post.content
+ 
   const renderElement = (element, idx) => {
-    // If this is the first element and a banner, add extra margin and shadow
+    
     const isFirstBanner = idx === 0 && element.type === 'banner';
     switch (element.type) {
       case 'heading':
@@ -123,7 +123,7 @@ const BlogContent = ({ post }) => {
 
   return (
     <div className="flex-1">
-      {/* Blog Header */}
+     
       <div className="mb-8">
         <h1 className="text-4xl font-semibold text-gray-800 mb-4">
           {post?.title || "Blog Post"}
@@ -134,7 +134,7 @@ const BlogContent = ({ post }) => {
           <span>{post?.date || "Date"}</span>
         </div>
       </div>
-      {/* Render dynamic content */}
+      
       <div className="prose prose-lg max-w-none">
         {Array.isArray(post?.content) && post.content.length > 0
           ? post.content.map(renderElement)

@@ -13,7 +13,7 @@ const Blogpost = ({ post, onBack }) => {
     <div className="min-h-screen bg-white">
       
       
-      {/* Back Button */}
+     
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
         <button
           onClick={onBack}
@@ -26,7 +26,7 @@ const Blogpost = ({ post, onBack }) => {
         </button>
       </div>
       
-      {/* Main Content */}
+      
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex gap-8">
           <BlogContent post={post} />

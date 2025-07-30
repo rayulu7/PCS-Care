@@ -11,7 +11,7 @@ const CreateBlog = ({
   onSubmit,
   isSubmitting: externalSubmitting
 }) => {
-  // If editing, use controlled state from parent; else, use internal state
+  
   const [formData, setFormData] = useState(
     initialData || {
       title: '',
@@ -26,12 +26,12 @@ const CreateBlog = ({
   const [selectedElement, setSelectedElement] = useState(null);
   const movedElementIdRef = useRef(null);
 
-  // If initialData changes (e.g., when switching blogs), update formData
+  
   useEffect(() => {
     if (initialData) setFormData(initialData);
   }, [initialData]);
 
-  // Handlers for controlled edit mode
+  
   const handleInputChange = (field, value) => {
     if (isEdit && onInputChange) {
       onInputChange(field, value);
@@ -114,7 +114,7 @@ const CreateBlog = ({
     setSelectedElement(null);
   };
 
-  // Move logic with ref/effect to keep selectedElement open
+  
   const moveElement = (id, direction) => {
     const content = [...(isEdit ? (initialData?.content || []) : formData.content)];
     const index = content.findIndex(element => element.id === id);
@@ -136,7 +136,7 @@ const CreateBlog = ({
     }
   }, [isEdit ? (initialData?.content || []) : formData.content]);
 
-  // --- Element Options Panel ---
+
   const renderElementOptions = (element) => {
     if (selectedElement !== element.id) return null;
     return (
@@ -146,7 +146,7 @@ const CreateBlog = ({
           <button onClick={() => moveElement(element.id, 'down')} className="px-2 py-1 bg-gray-500 text-white rounded text-xs hover:bg-gray-600">↓</button>
           <button onClick={() => removeElement(element.id)} className="px-2 py-1 bg-red-500 text-white rounded text-xs hover:bg-red-600"><X className="h-3 w-3" /></button>
         </div>
-        {/* Banner options */}
+        
         {element.type === 'banner' && (
           <>
             <div>
@@ -224,7 +224,7 @@ const CreateBlog = ({
             </div>
           </>
         )}
-        {/* Heading options */}
+       
         {element.type === 'heading' && (
           <>
             <div>
@@ -241,7 +241,7 @@ const CreateBlog = ({
             </div>
           </>
         )}
-        {/* Text options */}
+       
         {element.type === 'text' && (
           <>
             <div>
@@ -262,7 +262,7 @@ const CreateBlog = ({
     );
   };
 
-  // --- Render Element ---
+  
   const renderElement = (element) => {
     const isSelected = selectedElement === element.id;
     switch (element.type) {
@@ -513,11 +513,10 @@ const CreateBlog = ({
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Create excerpt from first text element
     const firstTextElement = formData.content.find(element => element.type === 'text');
     const excerpt = firstTextElement ? firstTextElement.content.substring(0, 150) + '...' : 'Blog post excerpt';
 
-    // Create banner image from first image element
+   
     const firstImageElement = formData.content.find(element => element.type === 'image');
     const bannerImage = firstImageElement ? firstImageElement.content : '';
 
@@ -580,12 +579,12 @@ const CreateBlog = ({
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {showSuccess && !isEdit && (
           <div className="mb-6 bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg">
-            ✅ Blog post created successfully! Redirecting to blog list...
+          Blog post created successfully! Redirecting to blog list...
           </div>
         )}
 
         <form id={isEdit ? 'edit-blog-form' : 'blog-form'} onSubmit={isEdit ? onSubmit : handleSubmit} className="space-y-6">
-          {/* Basic Information */}
+         
           <div className="bg-white rounded-lg shadow-md p-6">
             <h2 className="text-lg font-semibold text-gray-900 mb-4">Blog Information</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -634,7 +633,7 @@ const CreateBlog = ({
             </div>
           </div>
 
-          {/* Floating Vertical Options Bar - left side middle, transparent background */}
+          
           <div style={{position: 'fixed', top: '58%', left: '32px', transform: 'translateY(-50%)', zIndex: 50, background: 'transparent', display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'flex-start', pointerEvents: 'none'}}>
             <div style={{pointerEvents: 'auto', display: 'flex', flexDirection: 'column', gap: '12px', background: 'rgba(255,255,255,0.0)', borderRadius: '16px', boxShadow: 'none', padding: 0}}>
               <button
@@ -693,11 +692,11 @@ const CreateBlog = ({
               </button>
             </div>
           </div>
-          {/* Content Builder */}
+         
           <div className="bg-white rounded-lg shadow-md p-6 mt-2">
             <h2 className="text-lg font-semibold text-gray-900 mb-6">Content Builder</h2>
 
-            {/* Content Area */}
+            
             <div className="min-h-[400px] border-2 border-dashed border-gray-300 rounded-lg p-6">
               {formData.content.length === 0 ? (
                 <div className="text-center text-gray-500 py-12">

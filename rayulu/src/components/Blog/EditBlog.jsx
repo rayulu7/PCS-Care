@@ -3,27 +3,27 @@ import { ArrowLeft, Save } from 'lucide-react';
 import CreateBlog from './CreateBlog';
 
 const EditBlog = ({ blog, onBack, onSave }) => {
-  // Use local state to edit the blog
+  
   const [formData, setFormData] = useState(blog);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
-  // If the blog prop changes (e.g., switching between blogs), update formData
+ 
   useEffect(() => {
     setFormData(blog);
   }, [blog]);
 
-  // Handler for updating fields
+ 
   const handleInputChange = (field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
-  // Handler for updating content array
+ 
   const handleContentChange = (content) => {
     setFormData(prev => ({ ...prev, content }));
   };
 
-  // Save handler
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -39,7 +39,7 @@ const EditBlog = ({ blog, onBack, onSave }) => {
     }
   };
 
-  // Render the CreateBlog UI but with editing logic
+  
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="bg-white shadow-sm">
@@ -61,10 +61,10 @@ const EditBlog = ({ blog, onBack, onSave }) => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {showSuccess && (
           <div className="mb-6 bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg">
-            ✅ Blog post updated!
+             Blog post updated!
           </div>
         )}
-        {/* Reuse CreateBlog UI, but with editing logic */}
+       
         <CreateBlog
           isEdit
           initialData={formData}
@@ -73,7 +73,7 @@ const EditBlog = ({ blog, onBack, onSave }) => {
           onSubmit={handleSubmit}
           isSubmitting={isSubmitting}
         />
-        {/* Back to Blogs button at the bottom */}
+        
         <div className="flex justify-center mt-8">
           <button
             onClick={onBack}

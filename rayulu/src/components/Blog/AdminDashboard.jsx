@@ -10,7 +10,7 @@ export default function AdminDashboard() {
   const [date, setDate] = useState('');
 
   useEffect(() => {
-    // load only saved posts (defaults are read-only)
+   
     const saved = JSON.parse(localStorage.getItem('Blogs') || '[]');
     setPosts(saved);
   }, []);
@@ -43,7 +43,7 @@ export default function AdminDashboard() {
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-4xl font-bold mb-8 text-gray-800">Blog Admin</h2>
 
-        {/* Form */}
+        
         <div className="space-y-4 mb-12">
           <input
             value={title}
@@ -83,7 +83,7 @@ export default function AdminDashboard() {
           </button>
         </div>
 
-        {/* List of saved posts */}
+        
         <ul className="space-y-4">
           {posts.map(p => (
             <li key={p.id} className="p-4 bg-white rounded shadow">

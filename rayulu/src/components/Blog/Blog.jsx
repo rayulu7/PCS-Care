@@ -21,11 +21,11 @@ const Blog = () => {
   const [editingBlog, setEditingBlog] = useState(null);
 
   useEffect(() => {
-    // Get admin-created blogs from localStorage
+   
     const adminBlogs = JSON.parse(localStorage.getItem('blogs') || '[]');
     setAllPosts(adminBlogs);
     
-    // Check if user is already logged in
+    
     const adminStatus = localStorage.getItem('isAdmin');
     if (adminStatus === 'true') {
       setIsAdmin(true);
@@ -61,11 +61,11 @@ const Blog = () => {
   };
 
   const handleDeleteBlog = (blogId) => {
-    // Only delete from admin blogs (localStorage)
+   
     const existingBlogs = JSON.parse(localStorage.getItem('blogs') || '[]');
     const updatedBlogs = existingBlogs.filter(blog => blog.id !== blogId);
     localStorage.setItem('blogs', JSON.stringify(updatedBlogs));
-    // Remove from UI
+   
     setAllPosts(allPosts.filter(post => post.id !== blogId));
   };
 
@@ -92,7 +92,7 @@ const Blog = () => {
         blog={editingBlog}
         onBack={() => setEditingBlog(null)}
         onSave={updatedBlog => {
-          // Update blog in localStorage and UI
+       
           const existingBlogs = JSON.parse(localStorage.getItem('blogs') || '[]');
           const updatedBlogs = existingBlogs.map(b => b.id === updatedBlog.id ? updatedBlog : b);
           localStorage.setItem('blogs', JSON.stringify(updatedBlogs));
@@ -109,10 +109,10 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
+     
       <BlogHero />
       
-      {/* Floating Admin Login Button (icon only, left side) */}
+     
       {!isAdmin && (
         <button
           onClick={() => setShowLoginModal(true)}
@@ -123,7 +123,7 @@ const Blog = () => {
           <UserCog className="h-6 w-6" />
         </button>
       )}
-      {/* Admin Controls */}
+    
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex justify-end items-center space-x-4">
           {isAdmin ? (
@@ -147,16 +147,16 @@ const Blog = () => {
         </div>
       </div>
       
-      {/* Main Content */}
+   
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="flex flex-col lg:flex-row gap-8">
-          {/* Blog Posts Grid */}
+         
           <div className="flex-1">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
               {allPosts.map((post) => (
                 <div key={post.id} className="relative group">
                   <BlogCard post={post} onReadMore={handleReadMore} />
-                  {/* Show delete and edit buttons for admin-created blogs only (id length > 10) */}
+                 
                   {isAdmin && post.id.length > 10 && (
                     <div className="absolute top-2 right-2 z-10 flex gap-2">
                       <button
@@ -179,21 +179,21 @@ const Blog = () => {
               ))}
             </div>
             
-            {/* Pagination */}
+           
             <BlogPagination />
           </div>
           
-          {/* Sidebar */}
+       
           <div className="lg:w-80">
             <BlogArchive />
           </div>
         </div>
         
-        {/* Stats Section */}
+       
         <BlogStats />
       </div>
 
-      {/* Login Modal */}
+      
       <LoginModal
         isOpen={showLoginModal}
         onClose={() => setShowLoginModal(false)}

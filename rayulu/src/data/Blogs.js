@@ -1,6 +1,4 @@
-// src/data/Blogs.js
 
-// 1. Define your defaultBlogs array
 const defaultBlogs = [
   {
     id: "1",
@@ -34,5 +32,5 @@ const defaultBlogs = [
   }
 ];
 
-// 2. Export it as the module default
+
 export default defaultBlogs;
