@@ -65,7 +65,7 @@ const FloatingContactIcons = () => {
       </a>
       {/* WhatsApp Icon */}
       <a
-        href="https://wa.me/919392612314"
+        href="https://wa.me/919014865154"
         className="group"
         aria-label="WhatsApp"
         target="_blank"
