@@ -7,12 +7,10 @@ import BlogArchive from './BlogArchive';
 import BlogPagination from './BlogPagination';
 import BlogStats from './BlogStats';
 
-
-
 import LoginModal from './LoginModal';
 import CreateBlog from './CreateBlog';
 import EditBlog from './EditBlog';
-import Blogpost from './BlogPost.jsx';
+import Blogpost from './Blogpost.jsx';
 
 const Blog = () => {
   const [selectedPost, setSelectedPost] = useState(null);
