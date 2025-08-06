@@ -8,6 +8,7 @@ import CorporateCarpetCleaningTypes from './CorporateCarpet2';
 import CorporateCarpetExpectSection from './CorporateCarpetExpectation';
 import ChooseUs from '../Form/ChooseUs';
 import CorporateCarpetQuestions from './CorporateCarpetQuestions';
+import CorporateCarpetForm from './CorporateCarpetForm';
 
 
 
@@ -22,7 +23,7 @@ const CorporateCarpetCleaningService = () => {
 
   return (
     <div>
-        <ContactForm />
+        <CorporateCarpetForm />
     <div className="min-h-screen bg-gray-50 font-poppins">
       <div className="max-w-6xl mx-auto p-8">
    

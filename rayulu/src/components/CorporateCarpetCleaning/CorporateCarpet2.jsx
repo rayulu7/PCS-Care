@@ -3,6 +3,7 @@ import React from 'react';
 
 import CorporateCities from './CorporateCities.jsx'
 import CorporateCarpetAreasSection from './CorporateCarpetArea.jsx';
+import CorporateAreasSection from './CorporateAreas.jsx';
 
 const CorporateCarpetCleaningTypes = () => {
   const services = [
@@ -105,7 +106,7 @@ const CorporateCarpetCleaningTypes = () => {
       </div>
     </div>
     <CorporateCities />
-    <CorporateCarpetAreasSection />
+    <CorporateAreasSection />
    </>
   );
 };
