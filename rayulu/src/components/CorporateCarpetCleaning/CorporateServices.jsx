@@ -2,46 +2,49 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import CorporateOfficialForm from "./CorporateOfficialForm";
+import CorporateAbout from "./CorporateAbout";
+import CorporateAreasSection from "./CorporateAreas";
+import ChooseUs from "../Form/ChooseUs";
 
 const cardData = [
   {
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400",
+    image: './carpetCleaningService.jpg',
     title: "Carpet Cleaning",
     description: "Make your carpets dust-free and allergen-free using our low moisture, eco-friendly and biodegradable chemicals.",
     link: "/services/office-carpet-cleaning"
   },
   {
-    image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=400",
+    image: './marblePolishingService.jpg',
     title: "Marble Polishing",
     description: "Our professional team restores the shine of your precious marble floor using the best chemicals and machinery.",
     link: "/services/hotel-carpet-care"
   },
   {
-    image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=400",
+    image: './sofaCleaningService.jpg',
     title: "Sofa Cleaning",
     description: "Get your sofas cleaned with Eco-Friendly Chemicals containing only 10% moisture to increase the life of Fabric.",
     link: "/services/corporate-sofa-cleaning"
   },
   {
-    image: "https://images.unsplash.com/photo-1503602642458-232111445657?w=400",
+    image: './chairCleaningService.jpg',
     title: "Chair Cleaning",
     description: "Get your Chair cleaned with Eco-Friendly Chemicals containing only 10% moisture to increase the life of Fabric.",
     link: "/services/conference-room-care"
   },
   {
-    image: "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?w=400",
+    image: "./pestControlService.jpg",
     title: "Pest Control",
     description: "Protect your office/Industry against pests by engaging our experts & professionals with 19+ years of experience.",
     link: "/services/reception-area-cleaning"
   },
   {
-    image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=400",
+    image: "./workstationService.jpg",
     title: "Workstation Panels/Rollers",
     description: "PCS Care improves the Indoor Air Quality by making the panels/rollers allergen and dust free.",
     link: "/services/workspace-sanitization"
   },
   {
-    image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=400",
+    image: "./deepCleaningService.avif",
     title: "Deep Cleaning",
     description: "Our professional team ensures a clean and dust-free office atmosphere with optimum indoor air quality to increase employee productivity.",
     link: "/services/boardroom-detailing"
@@ -103,6 +106,9 @@ const CorporateServices = () => (
       </div>
     </div>
   </section>
+  <CorporateAbout />
+  <CorporateAreasSection />
+  <ChooseUs />
   </>
 );
 

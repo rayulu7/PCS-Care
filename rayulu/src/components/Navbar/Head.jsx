@@ -61,7 +61,7 @@ const Head = () => {
       
         <div className="flex items-center gap-1">
           <Link
-            to="/residential"
+            to="/corporate-services"
             className={`flex items-center gap-1 px-4 py-2 rounded-md transition-colors ${
               activeTab === 'residential'
                 ? 'bg-orange-500 text-white'

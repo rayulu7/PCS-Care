@@ -13,7 +13,7 @@ const Home = () => {
       
       <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4 py-8">
         <Banner />
-        <HomeForm />
+        
         <CorporateServices />
         {/* <div className="w-full max-w-4xl mx-auto">
     

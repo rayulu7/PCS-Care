@@ -12,7 +12,7 @@ const LoginModal = ({ isOpen, onClose, onLogin }) => {
     e.preventDefault();
     setError('');
     
-    // Check for admin credentials
+    
     if (username === 'admin' && password === 'admin123') {
       setUsername('');
       setPassword('');

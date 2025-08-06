@@ -40,7 +40,7 @@ export default function CorporateOfficialForm() {
   };
 
   return (
-    <div className="bg-black py-12 font-poppins">
+    <div className="bg-black py-12 px-4 font-poppins">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start">
       
         <div className="md:w-7/12 text-center md:text-left px-4">
@@ -59,7 +59,7 @@ export default function CorporateOfficialForm() {
             <br />
             2005
           </h1>
-
+           <p className = "text-base md:text-lg font-poppins text-white leading-relaxed">Get&nbsp; Best&nbsp; Corporate/Industrial&nbsp; Cleaning&nbsp; &&nbsp; Maintenance&nbsp; Services&nbsp; on &nbsp;par &nbsp;with&nbsp;&nbsp;  international&nbsp;&nbsp;  standards&nbsp; &nbsp; using&nbsp;&nbsp;  the&nbsp;&nbsp;  state-of-the-art&nbsp; machinery&nbsp; and&nbsp; chemicals</p>
           <h4 className="text-[22px] text-white mt-6 tracking-wide">
             Hyderabad &ndash; Bengaluru &ndash; Pune &ndash; Mumbai &ndash; Chennai
           </h4>

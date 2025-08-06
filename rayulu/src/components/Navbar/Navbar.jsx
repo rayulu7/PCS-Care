@@ -9,7 +9,7 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
     {
-      name: 'Corporate Services',
+      name: 'Services',
       path: '/corporate-services',
       dropdown: true,
       sublinks: [
@@ -22,26 +22,26 @@ const Navbar = () => {
         { name: 'Deep Cleaning', path: '/form' },
       ],
     },
-    {
-      name: 'Home Services',
-      path: '/form',
-      dropdown: true,
-      sublinks: [
-        { name: 'Carpet Cleaning', path: '/home-services/carpet-cleaning' },
-        { name: 'Marble Polishing', path: '/home-services/marble-polishing' },
-        { name: 'Sofa Cleaning', path: '/form' },
-        {
-          name: 'Deep Cleaning',
-          path: '/form',
-          children: [
-            { name: 'Deep Cleaning - Vacant', path: '/home-services/deep-cleaning/vacant' },
-            { name: 'Deep Cleaning Occupied', path: '/home-services/deep-cleaning/occupied' },
-            { name: 'Deep Cleaning - Villa / Duplex / Triplex', path: '/home-services/deep-cleaning/full-home' },
-            { name: 'Intensive Deep Cleaning', path: '/home-services/deep-cleaning/intensive' },
-          ],
-        },
-      ],
-    },
+    // {
+    //   name: 'Home Services',
+    //   path: '/form',
+    //   dropdown: true,
+    //   sublinks: [
+    //     { name: 'Carpet Cleaning', path: '/home-services/carpet-cleaning' },
+    //     { name: 'Marble Polishing', path: '/home-services/marble-polishing' },
+    //     { name: 'Sofa Cleaning', path: '/form' },
+    //     {
+    //       name: 'Deep Cleaning',
+    //       path: '/form',
+    //       children: [
+    //         { name: 'Deep Cleaning - Vacant', path: '/home-services/deep-cleaning/vacant' },
+    //         { name: 'Deep Cleaning Occupied', path: '/home-services/deep-cleaning/occupied' },
+    //         { name: 'Deep Cleaning - Villa / Duplex / Triplex', path: '/home-services/deep-cleaning/full-home' },
+    //         { name: 'Intensive Deep Cleaning', path: '/home-services/deep-cleaning/intensive' },
+    //       ],
+    //     },
+    //   ],
+    // },
     { name: 'Contact Us', path: '/contact' },
   ];
 
@@ -153,7 +153,7 @@ const Navbar = () => {
 
           <Link className="hidden md:flex items-center gap-4" to="/registration-certificate">
             <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-[#f47b00] transition-colors duration-300">
-              Registration
+              Register
             </button>
           </Link>
 
@@ -246,7 +246,7 @@ const Navbar = () => {
 
           <Link to="/registration-certificate" className="w-full text-center">
             <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-[#f47b00] transition-colors duration-300 w-full max-w-xs">
-              Registration
+              Register
             </button>
           </Link>
         </div>
