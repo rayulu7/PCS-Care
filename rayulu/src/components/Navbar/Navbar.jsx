@@ -14,7 +14,7 @@ const Navbar = () => {
       dropdown: true,
       sublinks: [
         { name: 'Carpet Cleaning', path: '/Corporate-services/carpet-cleaning' },
-        { name: 'Marble Polishing', path: '/form' },
+        { name: 'Marble Polishing', path: '/marble-polishing' },
         { name: 'Sofa Cleaning', path: '/form' },
         { name: 'Chair Cleaning', path: '/form' },
         { name: 'Pest Control', path: '/form' },

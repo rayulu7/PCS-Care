@@ -32,6 +32,7 @@ import { FaPhoneAlt } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 import { FaCommentDots } from 'react-icons/fa';
 import { FaArrowUp } from 'react-icons/fa';
+import CorporateMarbleService from './components/CorporateCarpetCleaning/CorporateMarblePolishing/CorporateMarblePage';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -125,6 +126,7 @@ const App = () => {
               <Route path = "/blog-page" element = {<BlogApp />} />
               <Route path = "/blog-page/:id" element = {<BlogContent />} />
               <Route path = "/corporate-services" element = {<CorporateServices />} />
+              <Route path = "/marble-polishing" element = {<CorporateMarbleService /> } />
             </Routes>
           </main>
           <Stats />
