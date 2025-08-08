@@ -15,11 +15,11 @@ const Navbar = () => {
       sublinks: [
         { name: 'Carpet Cleaning', path: '/Corporate-services/carpet-cleaning' },
         { name: 'Marble Polishing', path: '/marble-polishing' },
-        { name: 'Sofa Cleaning', path: '/form' },
-        { name: 'Chair Cleaning', path: '/form' },
-        { name: 'Pest Control', path: '/form' },
-        { name: 'Workstation Panels/Rollers/Blinds Cleaning', path: '/form' },
-        { name: 'Deep Cleaning', path: '/form' },
+        { name: 'Sofa Cleaning', path: '/sofa-cleaning' },
+        { name: 'Chair Cleaning', path: '/chair-cleaning' },
+        { name: 'Pest Control', path: '/pest-control' },
+        { name: 'Workstation Panels/Rollers/Blinds Cleaning', path: '/workstation-cleaning' },
+        { name: 'Deep Cleaning', path: '/deep-cleaning' },
       ],
     },
     // {

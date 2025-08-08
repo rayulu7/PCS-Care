@@ -33,6 +33,11 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { FaCommentDots } from 'react-icons/fa';
 import { FaArrowUp } from 'react-icons/fa';
 import CorporateMarbleService from './components/CorporateCarpetCleaning/CorporateMarblePolishing/CorporateMarblePage';
+import CorporateSofaService from './components/CorporateCarpetCleaning/CorporateSofaCleaning/CorporateSofaPage';
+import CorporateChairService from './components/CorporateCarpetCleaning/CorporateChairCleaning/CorporateChairPage';
+import CorporatePestService from './components/CorporateCarpetCleaning/CorporatePestControl/CorporatePestPage';
+import CorporateWorkService from './components/CorporateCarpetCleaning/CorporateWorkstationCleaning/CorporateWorkPage';
+import CorporateDeepService from './components/CorporateCarpetCleaning/CorporateDeepCleaning/CorporateDeepPage';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -127,6 +132,11 @@ const App = () => {
               <Route path = "/blog-page/:id" element = {<BlogContent />} />
               <Route path = "/corporate-services" element = {<CorporateServices />} />
               <Route path = "/marble-polishing" element = {<CorporateMarbleService /> } />
+              <Route path = "/sofa-cleaning" element = {<CorporateSofaService /> } />
+              <Route path = "/chair-cleaning" element = {<CorporateChairService />} />
+              <Route path = "/pest-control" element = {<CorporatePestService />} />
+              <Route path = "/workstation-cleaning" element = {<CorporateWorkService />} />
+              <Route path = "/deep-cleaning" element = {<CorporateDeepService />} />
             </Routes>
           </main>
           <Stats />
