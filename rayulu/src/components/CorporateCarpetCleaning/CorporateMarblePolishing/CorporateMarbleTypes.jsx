@@ -8,6 +8,7 @@ import CorporateMarbleProcess from './CorporateMarbleProcess';
 import CorporateMarbleExpectSection from './CorporateMarbleExpectation';
 import ChooseUs from '../../Form/ChooseUs';
 import CorporateMarbleQuestions from './CorporateMarbleQuestions';
+import CorporateMarbleService from './CorporateMarbleServices';
 
 
 
@@ -15,24 +16,24 @@ const CorporateMarbleTypes = () => {
   const services = [
     {
       id: 1,
-      title: "Encapsulation",
-      image: "/carpet1.jpg",
+      title: "Indian Marbles",
+      image: "/indian_marble1.avif",
       description:
-        "Encapsulation involves a unique chemical solution that is used in the carpet cleaning. The polymers in the Encapsulation Solution encircle and trap the dirt particles in the carpet fibres. When the enclosed dirt dries, it becomes brittle and may be easily vacuumed away. While this low-moisture approach dries quickly and is highly recommended by all carpet manufacturers."
+        "Indian Marble Floors have a wide variety of patterns, different colour choices and elegance. They are notable for their luxurious look, affordable price and durability and are suitable for any type of space. A Few Indian Floor Marbles are Makrana White, Rajasthani Green, Indian Statuario, Onyx Marble and Many more."
     },
     {
       id: 2,
-      title: "Hot Water Injection Extraction (Steam Cleaning)",
-      image: "/carpet2.jpg",
+      title: "Italian Marbles",
+      image: "/italian_mable1.avif",
       description:
-        "Hot Water Injection Extraction process uses hot water and a cleaning solution to treat the carpets. Hot water helps the carpet to loosen dirt and dust whereas the cleaning solution will remove the stains. Further, vacuum is used to extract or remove the dirty water from the carpet."
+        "Besides Indian Marble Floors, the other notable ones are Italian Marbles. Italian Marble Floors are also elegant in their look, style and elevates the beauty of any space. Few Italian Marbles are Carrara Marble, Calacatta Marble, Statuario Marble and Many more."
     },
     {
       id: 3,
-      title: "Dry Shampooing",
-      image: "/carpet3.jpg",
+      title: "All Types of Floors",
+      image: "/marble2.avif",
       description:
-        "Special Carpet Shampoo is applied to the carpet using water as medium. The dirt and dust is absorbed by shampoo, which is further removed and carpet is dried. The whole process is worked-out with a Single Disc Machine, which is effective and economic."
+        "Along with Indian Marbles and Italian Marbles, there are a wide variety of marble floors that are utilised in homes, offices, industries and other commercial spaces. PCS Care is capable of handling any type of marble floors to make them shiny and clean."
     }
   ];
 
@@ -114,6 +115,7 @@ const CorporateMarbleTypes = () => {
     <CorporateMarbleCities />
     <CorporateMarbleAreas />
     <CorporateMarbleProcess />
+    <CorporateMarbleService />
     <CorporateMarbleExpectSection />
     <ChooseUs />
     <CorporateMarbleQuestions />

@@ -18,7 +18,7 @@ export default function CorporateMarbleExpectSection() {
          
           <div className="w-full md:w-1/2">
             <img
-              src="/carpetCleaning.jpg"
+              src="/marble_service2.avif"
               alt="Carpet cleaning demonstration"
               className="w-full h-400 rounded-lg shadow-md "
             />

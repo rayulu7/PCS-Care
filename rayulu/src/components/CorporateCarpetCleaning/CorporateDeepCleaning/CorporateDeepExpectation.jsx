@@ -2,10 +2,10 @@ import React from 'react';
 
 
 const points = [
-  "Removes dust and dirt.",
-  "Removes scratches and stains from floor and tiles.",
-  "Removes bad odours, increases the shine of the floor and enhances the air quality.",
-  "Increases life span of Marble Floors."
+  "Removes dust, dirt and pathogens.",
+  "Removes stains from floor and tiles.",
+  "Protects your furniture, windows, doors and other items from damaging soon and improves their lifespan.",
+  "Removes bad odours and enhances the air quality."
 ];
 
 export default function CorporateDeepExpectSection() {
@@ -18,7 +18,7 @@ export default function CorporateDeepExpectSection() {
          
           <div className="w-full md:w-1/2">
             <img
-              src="/carpetCleaning.jpg"
+              src="/deepcleaning2.avif"
               alt="Carpet cleaning demonstration"
               className="w-full h-400 rounded-lg shadow-md "
             />
@@ -27,7 +27,7 @@ export default function CorporateDeepExpectSection() {
           
           <div className="w-full md:w-1/2">
             <h2 className=" font-poppins text-[37px] leading-[70px] font-bold text-[#1c1d3e] mb-12 text-left">
-            What Can You Expect From Our Marble Polishing Services
+            Our Commercial and Office Deep Cleaning Services helps you to
             </h2>
 
             <ul className="space-y-6">

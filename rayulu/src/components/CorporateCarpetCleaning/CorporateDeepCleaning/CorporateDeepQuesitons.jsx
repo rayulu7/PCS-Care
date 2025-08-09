@@ -6,24 +6,34 @@ const CorporateDeepQuestions = () => {
 
   const faqs = [
     {
-      question: "What is the purpose of Marble Floor Polishing?",
-      answer: "Marble Floor Polishing helps To regain your floor shine.Keeps your floor clean Removes odours and looks fresh. Kills pathogens and allergens to keep your floor hygiene. Removes scratches and stains."
+      question: "What is the difference between regular cleaning and deep cleaning?",
+      answer:
+        "Regular cleaning involves sweeping, mopping, dusting and emptying of trash. This goes in regular intervals like weekly or bi-weekly which takes an hour to complete. Regular cleaning just keeps your space neat and clean. Deep cleaning involves in-depth cleaning of your space. This goes twice or thrice in a year and involves cleaning of carpet, sofas, chairs, floor, etc. Deep cleaning removes dust and allergens. Moreover, it makes your space clean and fresh compared to regular cleaning."
     },
     {
-      question: "Do you provide floor cleaning services for Medium-Scale and Large-Scale Industries?",
-      answer: "Yes, we are capable of providing floor cleaning or marble cleaning services to any sized spaces and businesses including medium-scale and large-scale industries in Hyderabad, Bengaluru, Pune, Chennai and Mumbai."
+      question: "What is the purpose of deep cleaning?",
+      answer:
+        "Deep cleaning helps to remove dust, removes allergens and pathogens, keeps your office space clean, removes odours and looks fresh and hygienic."
+    },
+      {
+      question: "Do you provide deep cleaning for Medium-Scale and Large-Scale Industries?",
+      answer:
+        "Yes, we are capable of providing deep cleaning to any sized spaces and businesses including medium-scale and large-scale industries in Hyderabad, Bengaluru, Pune, Chennai and Mumbai."
     },
     {
-      question: "Do you use eco-friendly products for Marble Floor Polishing services?",
-      answer: "Yes, we use only Greenseal eco-friendly products for marble polishing, floor cleaning and other cleaning services for our clients due to which we are certified by U.S EPA, Woolsafe and Greenseal."
+      question: "Do you use eco-friendly products for deep cleaning services?",
+      answer:
+        "Yes, we use only eco-friendly products for deep cleaning and other cleaning services for our clients due to which we are certified by U.S EPA, Woolsafe and Greenseal."
+    },
+     {
+      question: "How much time does the deep cleaning process take?",
+      answer:
+        "Consumption of time for Deep cleaning depends upon the type of space, area size and other few factors. So, usually deep cleaning takes a minimum of one day and it goes one depending upon the above factors."
     },
     {
-      question: "How much time does the marble polishing process take?",
-      answer: "Consumption of time for marble polishing or floor cleaning depends upon the type of marble, area size and other few factors."
-    },
-    {
-      question: "How often should I polish my office marble floors?",
-      answer: "You can go for marble polishing or floor cleaning your commercial space or corporate office at least once and twice in a year to keep your surroundings clean, remove scratches and dust-free."
+      question: "How often should I deep clean my office?",
+      answer:
+        "You can deep clean your commercial space or corporate office at least once or twice in a year to keep your surroundings clean and dust-free."
     },
     
   ];
@@ -38,7 +48,7 @@ const CorporateDeepQuestions = () => {
      
         <div className="text-center mb-12">
           <h2 className="font-bold mb-4" style={{ fontSize: '48px', color: '#1c1d3e' }}>
-            Frequently Asked Questions
+            Have Your Any Question Look Here Now
           </h2>
         </div>
 

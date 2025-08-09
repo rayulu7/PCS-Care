@@ -17,6 +17,24 @@ const CorporateDeepService = () => {
     "Eco-Friendly Green Seal Certified Chemicals"
   ];
 
+  const extra = [
+    "Dry Dusting/Vacuuming of Curtains",
+    "Floor Scrubbing with Industrial grade machine",
+    "Carpet Cleaning",
+    "Chair Cleaning (or Chair Shampooing)",
+    "Sofa Cleaning (or Sofa Shampooing)",
+    "Bathroom Cleaning",
+  ]
+
+  const extraFeatures = [
+      "Cobweb Removal",
+      "Washing of WC and sink",
+      "Removal of scales from various office accessories to make them shiny",
+      "Doors, Tables, Glasses and Windows Cleaning",
+      "Switch Boards, Fans, Coolers and AC Cleaning",
+      "Any many more..."
+  ]
+
   return (
     <div>
         <CorporateDeepForm />
@@ -25,9 +43,9 @@ const CorporateDeepService = () => {
    
         <div className="text-left mb-12">
           <h1 className="font-bold mb-4 text-5xl leading-[60px] text-[#1c1d3e]">
-          Hire Professional Marble Polishing <br />
-           Services For Your Commercial <br />
-           and Office Marble Floors
+          Book Professional Deep Cleaning <br />
+           Services Today!<br />
+           
           </h1>
         </div>
 
@@ -37,11 +55,22 @@ const CorporateDeepService = () => {
           <div className="bg-white rounded-lg shadow-sm w-full md:w-[600px] p-6">
             <div className="text-gray-700 text-justify space-y-4">
               <p className="text-base font-normal leading-[27px] m-0">
-              Get a proper Marble Polishing for your office and commercial spaces from professionals like PCS Care. Frequent human visits, dirt and dust makes your floor look poor and dirty, which might consist of a lot of pathogens too. Sometimes scratches and stains takeaway Marble life soon, so to maintain a clean and shiny marble floor, you need frequent marble floor cleaning and polishing services and best professionals who do your work easier and simpler.</p>
-              <p className="text-base font-normal leading-[27px] m-0">
-              PCS Care is best not only for its commercial and office marble polishing services but also for usage of eco-friendly chemicals for all of its cleaning services. Yes, We use eco-friendly greenseal certified chemicals to polish your floors so you feel your marble floors are safe.</p>
-              <p className="text-base font-normal leading-[27px] m-0">
-              Contact PCS Care today to schedule a Free Marble Polishing Consultation!</p>
+              Due to heavy footfall, insufficient air circulation and lack of proper cleaning in corporate offices and commercial spaces, dust and allergens accumulate leading to unhealthy environment in the workplace. To remove dust and allergens from your commercial space and corporate offices, deep cleaning is a perfect solution. To make it more perfect and professional, you need a best deep cleaning company like PCS Care. Commercial spaces and offices consist of a lot of furniture and electronic items, which require patience and thorough cleaning.</p>
+              <div>
+                <h2 className = "font-bold text-2xl text-black">
+                  Our professional deep cleaning services include
+                </h2>
+                <div className="space-y-4 mt-4">
+              {extra.map((feature, index) => (
+                <div key={index} className="flex items-start space-x-3">
+                  <div className="flex-shrink-0 w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center mt-1">
+                    <CheckCircle className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-gray-700 text-lg leading-relaxed">{feature}</span>
+                </div>
+              ))}
+            </div>
+              </div>
             </div>
           </div>
 
@@ -56,6 +85,21 @@ const CorporateDeepService = () => {
                   <span className="text-gray-700 text-lg leading-relaxed">{feature}</span>
                 </div>
               ))}
+            </div>
+            <div className = "py-4 mt-12 mb-4">
+              <h2 className = "font-bold text-2xl mb-4">
+                Along with this, deep cleaning is followed by
+              </h2>
+              <div className="space-y-4">
+              {extraFeatures.map((feature, index) => (
+                <div key={index} className="flex items-start space-x-3">
+                  <div className="flex-shrink-0 w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center mt-1">
+                    <CheckCircle className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-gray-700 text-lg leading-relaxed">{feature}</span>
+                </div>
+              ))}
+            </div>
             </div>
           </div>
         </div>

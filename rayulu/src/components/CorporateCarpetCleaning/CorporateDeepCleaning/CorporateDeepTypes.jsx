@@ -10,6 +10,8 @@ import CorporateDeepExpectSection from './CorporateDeepExpectation';
 import CorporateDeepProcess from './CorporateDeepProcess';
 import CorporateDeepAreas from './CorporateDeepAreas';
 import CorporateDeepCities from './CorporateDeepCities';
+import CorporateDeepService from './CorporateDeepService';
+import CorporateDeepSer from './CorporateDeepService';
 
 
 
@@ -98,7 +100,7 @@ const CorporateDeepTypes = () => {
 
   return (
     <>
-    <div className="py-12">
+    {/* <div className="py-12">
     
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold text-gray-800">
@@ -112,10 +114,11 @@ const CorporateDeepTypes = () => {
           <ServiceCard key={s.id} service={s} />
         ))}
       </div>
-    </div>
+    </div> */}
     <CorporateDeepCities />
     <CorporateDeepAreas />
-    <CorporateDeepProcess />
+    {/* <CorporateDeepProcess /> */}
+    <CorporateDeepSer />
     <CorporateDeepExpectSection />
     <ChooseUs />
     <CorporateDeepQuestions />
