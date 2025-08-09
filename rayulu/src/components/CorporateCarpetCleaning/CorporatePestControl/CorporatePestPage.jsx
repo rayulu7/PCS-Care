@@ -24,9 +24,9 @@ const CorporatePestService = () => {
    
         <div className="text-left mb-12">
           <h1 className="font-bold mb-4 text-5xl leading-[60px] text-[#1c1d3e]">
-          Hire Professional Marble Polishing <br />
-           Services For Your Commercial <br />
-           and Office Marble Floors
+          Professional Pest Control Services  <br />
+           in India<br />
+           
           </h1>
         </div>
 
@@ -36,11 +36,11 @@ const CorporatePestService = () => {
           <div className="bg-white rounded-lg shadow-sm w-full md:w-[600px] p-6">
             <div className="text-gray-700 text-justify space-y-4">
               <p className="text-base font-normal leading-[27px] m-0">
-              Get a proper Marble Polishing for your office and commercial spaces from professionals like PCS Care. Frequent human visits, dirt and dust makes your floor look poor and dirty, which might consist of a lot of pathogens too. Sometimes scratches and stains takeaway Marble life soon, so to maintain a clean and shiny marble floor, you need frequent marble floor cleaning and polishing services and best professionals who do your work easier and simpler.</p>
+              Corporate offices, Industries and other Commercial spaces consists of a lot of furniture, employees, frequent human traffic, machines, machine tools, electronic devices, etc., which attract pests like cockroaches, flies, mosquitoes. etc. and make your office space unhygienic and unclean. Pests not only create unhygienic conditions in your space but also spoil your infrastructure. Do not let pests create a problem to you and your furniture. Hire a professional pest control service provider like <span className = "font-bold">PCS Care</span></p>
               <p className="text-base font-normal leading-[27px] m-0">
-              PCS Care is best not only for its commercial and office marble polishing services but also for usage of eco-friendly chemicals for all of its cleaning services. Yes, We use eco-friendly greenseal certified chemicals to polish your floors so you feel your marble floors are safe.</p>
+              <span className = "font-bold">PCS Care</span> has a team of professionals who have 19+ years of experience in cleaning and maintenance of corporate offices, commercial spaces and industrial plants.</p>
               <p className="text-base font-normal leading-[27px] m-0">
-              Contact PCS Care today to schedule a Free Marble Polishing Consultation!</p>
+              Pest Controlling action not only kills pests like flies, cockroaches, mosquitoes, etc. but also throws away a few species like rats too. We use environmentally safe chemicals to control the pests, which do not harm your employees during and after the process. Moreover, our best pest control services keep your surroundings and floor clean and hygienic and let you breathe comfortably like never before.</p>
             </div>
           </div>
 

@@ -97,7 +97,7 @@ const CorporatePestTypes = () => {
 
   return (
     <>
-    <div className="py-12">
+    {/* <div className="py-12">
     
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold text-gray-800">
@@ -111,10 +111,13 @@ const CorporatePestTypes = () => {
           <ServiceCard key={s.id} service={s} />
         ))}
       </div>
+    </div> */}
+    <div>
+      <img src = "/pest.avif" alt = "pest-control" className = "w-full h-full object-cover" />
     </div>
     <CorporatePestCities />
     <CorporatePestAreas />
-    <CorporatePestProcess />
+    {/* <CorporatePestProcess /> */}
     <CorporatePestExpectSection />
     <ChooseUs />
     <CorporatePestQuestions />

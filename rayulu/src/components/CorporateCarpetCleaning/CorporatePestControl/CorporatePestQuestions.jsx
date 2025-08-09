@@ -6,26 +6,21 @@ const CorporatePestQuestions = () => {
 
   const faqs = [
     {
-      question: "What is the purpose of Marble Floor Polishing?",
-      answer: "Marble Floor Polishing helps To regain your floor shine.Keeps your floor clean Removes odours and looks fresh. Kills pathogens and allergens to keep your floor hygiene. Removes scratches and stains."
+      question: "Do you provide pest controlling services for warehouses?",
+      answer:
+        "Yes, we provide pest controlling services for any type of space including warehouses, cold storages, educational institutions, corporate offices, industrial plants, food processing plants and other types of business spaces."
     },
     {
-      question: "Do you provide floor cleaning services for Medium-Scale and Large-Scale Industries?",
-      answer: "Yes, we are capable of providing floor cleaning or marble cleaning services to any sized spaces and businesses including medium-scale and large-scale industries in Hyderabad, Bengaluru, Pune, Chennai and Mumbai."
+      question: "How often should I perform pest controlling?",
+      answer:
+        "The ideal frequency of performing pest controlling for any office or industrial plants depends upon many factors, including type of business, location, type of pest in your office etc. In general, we suggest to perform pest control once every 3 months."
     },
     {
-      question: "Do you use eco-friendly products for Marble Floor Polishing services?",
-      answer: "Yes, we use only Greenseal eco-friendly products for marble polishing, floor cleaning and other cleaning services for our clients due to which we are certified by U.S EPA, Woolsafe and Greenseal."
+      question: "How much time does it take to complete the whole pest control process?",
+      answer:
+        "It is not possible to predict the exact time to complete the whole pest control process. It actually depends on many factors like type of office/business, size of office, type of pest to remove etc."
     },
-    {
-      question: "How much time does the marble polishing process take?",
-      answer: "Consumption of time for marble polishing or floor cleaning depends upon the type of marble, area size and other few factors."
-    },
-    {
-      question: "How often should I polish my office marble floors?",
-      answer: "You can go for marble polishing or floor cleaning your commercial space or corporate office at least once and twice in a year to keep your surroundings clean, remove scratches and dust-free."
-    },
-    
+
   ];
 
   const toggleQuestion = (index) => {
