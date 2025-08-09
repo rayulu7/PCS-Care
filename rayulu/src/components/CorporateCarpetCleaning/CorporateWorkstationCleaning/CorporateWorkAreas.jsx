@@ -39,9 +39,11 @@ import {
         {/* Heading */}
         <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="font-poppins text-3xl sm:text-4xl md:text-[37px] leading-tight sm:leading-snug md:leading-[60px] font-bold text-[#1c1d3e]">
-            Our Commercial Marble Polishing<br/>
-            Servicing Areas Include
+            Our Industrial and Corporate Workstation Panels,<br/>
+            Window Blinds and Rollers Cleaning Services <br />
+            Covering Areas
           </h2>
+          <p>We provide our services to all types of sectors, which includes</p>
         </div>
   
         {/* first 6 in a 3‑col grid */}

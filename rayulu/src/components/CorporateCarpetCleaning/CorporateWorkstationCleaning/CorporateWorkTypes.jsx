@@ -98,7 +98,7 @@ const CorporateWorkTypes = () => {
 
   return (
     <>
-    <div className="py-12">
+    {/* <div className="py-12">
     
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold text-gray-800">
@@ -112,10 +112,10 @@ const CorporateWorkTypes = () => {
           <ServiceCard key={s.id} service={s} />
         ))}
       </div>
-    </div>
+    </div> */}
     <CorporateWorkCities />
     <CorporateWorkAreas />
-    <CorporateWorkProcess />
+    {/* <CorporateWorkProcess /> */}
     <CorporateWorkExpectSection />
     <ChooseUs />
     <CorporateWorkQuestions />

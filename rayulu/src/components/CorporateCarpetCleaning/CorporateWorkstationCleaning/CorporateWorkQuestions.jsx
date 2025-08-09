@@ -6,25 +6,26 @@ const CorporateWorkQuestions = () => {
 
   const faqs = [
     {
-      question: "What is the purpose of Marble Floor Polishing?",
-      answer: "Marble Floor Polishing helps To regain your floor shine.Keeps your floor clean Removes odours and looks fresh. Kills pathogens and allergens to keep your floor hygiene. Removes scratches and stains."
+      question: "Can you handle a large Industrial Plant too?",
+      answer:
+        "Yes, we have a large team of experts who can handle mini, small, medium and large industrial and production plants, corporate and commercial buildings in Hyderabad, Bangalore, Chennai, Pune and Mumbai."
     },
     {
-      question: "Do you provide floor cleaning services for Medium-Scale and Large-Scale Industries?",
-      answer: "Yes, we are capable of providing floor cleaning or marble cleaning services to any sized spaces and businesses including medium-scale and large-scale industries in Hyderabad, Bengaluru, Pune, Chennai and Mumbai."
+      question: "Do you use any chemicals for cleaning purposes?",
+      answer:
+        "Yes, we use chemicals and products that are eco-friendly for office workstation panels cleaning and window blinds cleaning services due to which we are certified by U.S EPA, Woolsafe and Greenseal."
     },
     {
-      question: "Do you use eco-friendly products for Marble Floor Polishing services?",
-      answer: "Yes, we use only Greenseal eco-friendly products for marble polishing, floor cleaning and other cleaning services for our clients due to which we are certified by U.S EPA, Woolsafe and Greenseal."
+      question: "How often should I clean my workstation panels, window blinds and window rollers?",
+      answer:
+        "Once in six months is ideal. However, depending upon traffic and usage it varies."
     },
     {
-      question: "How much time does the marble polishing process take?",
-      answer: "Consumption of time for marble polishing or floor cleaning depends upon the type of marble, area size and other few factors."
+      question: "Can all stains be removed?",
+      answer:
+        "It depends upon the longevity and origin of stains. Over a period of 2 to 3 cleaning cycles most of the stains fade-away. We make our best effort to remove stains."
     },
-    {
-      question: "How often should I polish my office marble floors?",
-      answer: "You can go for marble polishing or floor cleaning your commercial space or corporate office at least once and twice in a year to keep your surroundings clean, remove scratches and dust-free."
-    },
+
     
   ];
 

@@ -53,10 +53,10 @@ export default function CorporateWorkForm() {
               mt-4 md:mt-0
             "
           >
-            Professional<br />
-            Commercial & Office <br/>
-            Marble Polishing <br />
-            Services In India
+            Best Office Workstation<br />
+            Panels, Window Blinds & <br/>
+            Rollers Cleaning <br />
+            Services in India
             {/* &amp; */}
             <br />
             

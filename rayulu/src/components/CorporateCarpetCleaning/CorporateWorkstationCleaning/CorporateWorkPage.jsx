@@ -25,9 +25,9 @@ const CorporateWorkService = () => {
    
         <div className="text-left mb-12">
           <h1 className="font-bold mb-4 text-5xl leading-[60px] text-[#1c1d3e]">
-          Hire Professional Marble Polishing <br />
-           Services For Your Commercial <br />
-           and Office Marble Floors
+          Professional Office Workstation <br />
+           Panels Cleaning Services in India <br />
+         
           </h1>
         </div>
 
@@ -37,12 +37,16 @@ const CorporateWorkService = () => {
           <div className="bg-white rounded-lg shadow-sm w-full md:w-[600px] p-6">
             <div className="text-gray-700 text-justify space-y-4">
               <p className="text-base font-normal leading-[27px] m-0">
-              Get a proper Marble Polishing for your office and commercial spaces from professionals like PCS Care. Frequent human visits, dirt and dust makes your floor look poor and dirty, which might consist of a lot of pathogens too. Sometimes scratches and stains takeaway Marble life soon, so to maintain a clean and shiny marble floor, you need frequent marble floor cleaning and polishing services and best professionals who do your work easier and simpler.</p>
+              Workstation Panels are the main source for many devices, stationary items, storage spaces, and other necessary workable things, which is why they attract a lot of dust, grime and allergens. Once you start neglecting cleaning and maintaining, your office workstation panels and cubicle walls lifespan decreases sooner. Additionally, the unhygienic conditions in your office affects your employees' health too.</p>
               <p className="text-base font-normal leading-[27px] m-0">
-              PCS Care is best not only for its commercial and office marble polishing services but also for usage of eco-friendly chemicals for all of its cleaning services. Yes, We use eco-friendly greenseal certified chemicals to polish your floors so you feel your marble floors are safe.</p>
+              PCS Care provides the best’s office workstation panels cleaning service</p>
+              
               <p className="text-base font-normal leading-[27px] m-0">
-              Contact PCS Care today to schedule a Free Marble Polishing Consultation!</p>
+              - Uses U.S EPA, Woolsafe and Greenseal certified chemicals to remove hard stains and eliminate unpleasant odours.</p>
+              <p className="text-base font-normal leading-[27px] m-0">
+              - Sanitises your workstation, devices and employee belongings to make it germ-free.</p>
             </div>
+            <img src = "/Workstation.jpg" alt = "Workstation Cleaning" className = "w-full h-400 rounded-lg shadow-md mt-6" />
           </div>
 
          
@@ -56,6 +60,21 @@ const CorporateWorkService = () => {
                   <span className="text-gray-700 text-lg leading-relaxed">{feature}</span>
                 </div>
               ))}
+            </div>
+            <div className = "py-4 mt-32">
+              <h2 className = "font-bold mt-12 mb-4 text-3xl">Professional Office Window Blinds and Rollers Cleaning Services in India</h2>
+              <div className="text-gray-700 text-justify space-y-4">
+              <p className="text-base font-normal leading-[27px] m-0">
+              Office window blinds and rollers restrict the dust and light from flowing into the office space from outside, due to which they accumulate a lot of dust, allergens and stains. Lack of proper cleaning and maintenance of window blinds, indoor air quality will decrease, allowing the dust to spread all over your office.
+</p>
+              <p className="text-base font-normal leading-[27px] m-0">
+              PCS Care’s office window blinds cleaning services and window rollers cleaning services include</p>
+              
+              <p className="text-base font-normal leading-[27px] m-0">
+              - Eliminates unpleasant odour.</p>
+              <p className="text-base font-normal leading-[27px] m-0">
+             - Sanitises your window blinds to remove allergens and any other virus.</p>
+            </div>
             </div>
           </div>
         </div>
