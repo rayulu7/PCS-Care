@@ -21,7 +21,7 @@ const CorporateChairCities = () => {
         <h2 className="text-4xl font-extrabold text-black">
         Our Professional Marble Polishing Services Available In
         </h2>
-        <p className = "text-base mt-4">PCS Care is providing professional marble polishing services for corporate and commercial spaces in 5 cities currently.</p>
+        <p className = "text-base mt-4 font-normal"><span className = "text-[#1c1d3e] font-bold">PCS Care</span> is providing commercial and office chair cleaning services in 5 cities currently.</p>
       </div>
       
      
@@ -40,7 +40,7 @@ const CorporateChairCities = () => {
               className="mt-4 w-[117px] h-[117px] object-contain"
             />
             <p className="mt-2 text-[15px] leading-[27px] text-black font-bold text-center">
-              Marble Polishing services in<br />
+              Chair Cleaning Services in<br />
               {city.name}
             </p>
           </div>
@@ -63,7 +63,7 @@ const CorporateChairCities = () => {
               className="mt-4 w-[175.5px] h-[175.5px] object-contain"
             />
             <p className="mt-2 text-[15px] leading-[27px] text-black font-bold text-center">
-              Marble Polishing services in<br />
+              Chair Cleaning Services in<br />
               {city.name}
             </p>
           </div>

@@ -5,27 +5,33 @@ const CorporateChairQuestions = () => {
   const [openQuestion, setOpenQuestion] = useState(null);
 
   const faqs = [
+      {
+      question: "What happens if I do not clean my Office Chairs regularly?",
+      answer: "Chairs accumulate dust particles, allergens and other pathogens over a period of time. It affects your employees health due to deteriorating Indoor Air Quality and makes them look un-appealing. Therefore, regular chair cleaning (or shampooing) is required.",
+    },
+
+     {
+      question: "Do you use any machines for cleaning our office chairs?",
+      answer: "Spray guns for foam generation and industrial vacuum cleaners are used for extraction.",
+    },
+
     {
-      question: "What is the purpose of Marble Floor Polishing?",
-      answer: "Marble Floor Polishing helps To regain your floor shine.Keeps your floor clean Removes odours and looks fresh. Kills pathogens and allergens to keep your floor hygiene. Removes scratches and stains."
+      question: "Can chair shampooing remove hard stains?",
+      answer: "Over a period of 2 to 3 cleaning cycles most of the stains on office chairs will fade away. But due to a process called “wicking” they can reappear later."
     },
     {
-      question: "Do you provide floor cleaning services for Medium-Scale and Large-Scale Industries?",
-      answer: "Yes, we are capable of providing floor cleaning or marble cleaning services to any sized spaces and businesses including medium-scale and large-scale industries in Hyderabad, Bengaluru, Pune, Chennai and Mumbai."
+      question: "Which type of chairs do you handle?",
+      answer: "PCS Care handles all types of chairs, including fabric chairs, SmartGRID chairs, leather chairs, linen chairs, dining chairs, polyester chairs, and more.",
     },
     {
-      question: "Do you use eco-friendly products for Marble Floor Polishing services?",
-      answer: "Yes, we use only Greenseal eco-friendly products for marble polishing, floor cleaning and other cleaning services for our clients due to which we are certified by U.S EPA, Woolsafe and Greenseal."
+      question: "How much time does it take to dry a chair naturally after shampooing?",
+      answer: "With proper ventilation, an office chair usually takes 3 to 4 hours to dry."
     },
     {
-      question: "How much time does the marble polishing process take?",
-      answer: "Consumption of time for marble polishing or floor cleaning depends upon the type of marble, area size and other few factors."
-    },
-    {
-      question: "How often should I polish my office marble floors?",
-      answer: "You can go for marble polishing or floor cleaning your commercial space or corporate office at least once and twice in a year to keep your surroundings clean, remove scratches and dust-free."
-    },
-    
+      question: "How often should I clean my office chairs?",
+      answer: "It depends on the environment and dust levels. Generally, chairs should be cleaned at least 3 times a year.",
+    }
+
   ];
 
   const toggleQuestion = (index) => {

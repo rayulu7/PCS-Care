@@ -53,10 +53,10 @@ export default function CorporateChairForm() {
               mt-4 md:mt-0
             "
           >
-            Professional<br />
-            Commercial & Office <br/>
-            Marble Polishing <br />
-            Services In India
+            Best Office Chair<br />
+           Cleaning Services in<br/>
+            India for Corporate &<br />
+            Commercial Spaces
             {/* &amp; */}
             <br />
             

@@ -3,9 +3,10 @@ import React from 'react';
 
 const points = [
   "Removes dust and dirt.",
-  "Removes scratches and stains from floor and tiles.",
-  "Removes bad odours, increases the shine of the floor and enhances the air quality.",
-  "Increases life span of Marble Floors."
+  "Removes stains.",
+  "Protects your sofa fabric and increases the lifespan.",
+  "Enhance the look of your sofa.",
+  "Removes bad odours and improves air quality."
 ];
 
 export default function CorporateSofaExpectSection() {
@@ -18,16 +19,16 @@ export default function CorporateSofaExpectSection() {
          
           <div className="w-full md:w-1/2">
             <img
-              src="/carpetCleaning.jpg"
+              src="/sofa3.avif"
               alt="Carpet cleaning demonstration"
-              className="w-full h-400 rounded-lg shadow-md "
+              className="w-600 h-300 rounded-lg shadow-md "
             />
           </div>
 
           
           <div className="w-full md:w-1/2">
             <h2 className=" font-poppins text-[37px] leading-[70px] font-bold text-[#1c1d3e] mb-12 text-left">
-            What Can You Expect From Our Marble Polishing Services
+            What Can You Expect From Our Sofa Cleaning Services
             </h2>
 
             <ul className="space-y-6">

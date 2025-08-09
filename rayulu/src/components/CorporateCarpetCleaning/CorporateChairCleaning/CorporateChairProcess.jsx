@@ -2,10 +2,10 @@ import React from 'react';
 
 const CorporateChairProcess = () => {
   const steps = [
-    { number: 1, title: "Prior Site Inspection" },
-    { number: 2, title: "Grinding using diamond pads To remove Lippage" },
-    { number: 3, title: "Honing to remove scratches and bring back shine" },
-    { number: 4, title: "Polishing powder application to make it shiny" },
+    { number: 1, title: "Pre-Vacuuming to extract the dust" },
+    { number: 2, title: "Applies foam to trap dust particles." },
+    { number: 3, title: "Removal of foam along with dust particles using heavy duty vacuum cleaner" },
+    
     
   ];
 
@@ -17,7 +17,7 @@ const CorporateChairProcess = () => {
             className="font-bold text-gray-900 mb-6"
             style={{ fontFamily: '"Poppins", sans-serif', fontSize: '37px', lineHeight: '1.2' }}
           >
-            Our Professional Marble Polishing Services 
+            Our Professional Chair Cleaning Services
             <span className="block mt-2 text-gray-900">Process</span>
           </h2>
         </div>

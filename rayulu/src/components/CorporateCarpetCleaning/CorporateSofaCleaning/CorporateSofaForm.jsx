@@ -53,10 +53,10 @@ export default function CorporateSofaForm() {
               mt-4 md:mt-0
             "
           >
-            Professional<br />
-            Commercial & Office <br/>
-            Marble Polishing <br />
-            Services In India
+            Professional Sofa<br />
+            Cleaning Services for <br/>
+            Corporate & <br />
+            Commercial Spaces
             {/* &amp; */}
             <br />
             

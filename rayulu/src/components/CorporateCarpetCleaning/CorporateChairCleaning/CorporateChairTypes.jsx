@@ -8,8 +8,8 @@ import CorporateChairCities from './CorporateChairCities';
 import CorporateChairAreas from './CorporateChairAreas';
 import CorporateChairProcess from './CorporateChairProcess';
 import CorporateChairExpectSection from './CorporateChairExpectation';
-import CorporateSofaQuestions from '../CorporateSofaCleaning/CorporateSofaQuestions';
-import CorporateDeepQuestions from '../CorporateDeepCleaning/CorporateDeepQuesitons';
+
+import CorporateChairQuestions from './CorporateChairQuestions';
 
 
 
@@ -98,7 +98,7 @@ const CorporateChairTypes = () => {
 
   return (
     <>
-    <div className="py-12">
+    {/* <div className="py-12">
     
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold text-gray-800">
@@ -112,13 +112,13 @@ const CorporateChairTypes = () => {
           <ServiceCard key={s.id} service={s} />
         ))}
       </div>
-    </div>
+    </div> */}
     <CorporateChairCities />
     <CorporateChairAreas />
     <CorporateChairProcess />
     <CorporateChairExpectSection />
     <ChooseUs />
-    <CorporateDeepQuestions />
+    <CorporateChairQuestions />
    </>
   );
 };

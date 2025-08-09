@@ -7,14 +7,14 @@ export default function CorporateSofaQuestions() {
 
   const faqs = [
     {
+      question: "What happens if I do not clean my sofa regularly?",
+      answer:
+        "It accumulates dust particles, allergens and other pathogens over a period of time. It affects your health due to deteriorating Indoor Air Quality and aesthetically also it will be un-appealing. Therefore, regular sofa cleaning is required.."
+    },
+    {
       question: "Do you use any machines for sofa cleaning and shampooing?",
       answer:
         "Spray guns for foam generation and industrial vacuum cleaners are used for extraction."
-    },
-    {
-      question: "Which type of sofa fabric requires more frequent shampooing services?",
-      answer:
-        "Rather than the type it is the usage, stain formation etc. that determine the frequency of cleaning."
     },
     {
       question: "Can sofa shampooing remove hard stains?",

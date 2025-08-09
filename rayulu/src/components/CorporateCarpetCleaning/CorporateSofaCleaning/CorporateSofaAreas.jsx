@@ -39,9 +39,10 @@ import {
         {/* Heading */}
         <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="font-poppins text-3xl sm:text-4xl md:text-[37px] leading-tight sm:leading-snug md:leading-[60px] font-bold text-[#1c1d3e]">
-            Our Commercial Marble Polishing<br/>
-            Servicing Areas Include
+            Our Commercial Sofa Cleaning<br/>
+            Servicing Areas include
           </h2>
+          <p>We, the best sofa cleaning company provide professional sofa cleaning services for all businesses and spaces, which includes</p>
         </div>
   
         {/* first 6 in a 3‑col grid */}

@@ -25,9 +25,9 @@ const CorporateSofaService = () => {
    
         <div className="text-left mb-12">
           <h1 className="font-bold mb-4 text-5xl leading-[60px] text-[#1c1d3e]">
-          Hire Professional Marble Polishing <br />
-           Services For Your Commercial <br />
-           and Office Marble Floors
+          Best Commercial and Office Sofa <br />
+           Cleaning Services in India<br />
+           
           </h1>
         </div>
 
@@ -37,11 +37,11 @@ const CorporateSofaService = () => {
           <div className="bg-white rounded-lg shadow-sm w-full md:w-[600px] p-6">
             <div className="text-gray-700 text-justify space-y-4">
               <p className="text-base font-normal leading-[27px] m-0">
-              Get a proper Marble Polishing for your office and commercial spaces from professionals like PCS Care. Frequent human visits, dirt and dust makes your floor look poor and dirty, which might consist of a lot of pathogens too. Sometimes scratches and stains takeaway Marble life soon, so to maintain a clean and shiny marble floor, you need frequent marble floor cleaning and polishing services and best professionals who do your work easier and simpler.</p>
+              Keep your office sofas dust-free and clean with the best and professional sofa cleaning services (or shampooing) from the PCS Care team. PCS Care has a team of professionals who have 19+ years of experience in handling the corporate services like Fabric Sofa Cleaning, Leather Sofa Cleaning, Cushions Dry Cleaning, Couch Dry Cleaning and Settee Dry Cleaning.</p>
               <p className="text-base font-normal leading-[27px] m-0">
-              PCS Care is best not only for its commercial and office marble polishing services but also for usage of eco-friendly chemicals for all of its cleaning services. Yes, We use eco-friendly greenseal certified chemicals to polish your floors so you feel your marble floors are safe.</p>
+              Cleaning and Maintaining your sofas, cushions and couches regularly not only removes the dust, allergens, stains, odours etc but also improves their life-span and enhances the look of the sofas. Whether your sofa is made of velvet, cotton, linen, polyester, nylon, leather, or whatever be your type of sofa fabrics, our professionals ensure your sofa is dust free, shining, clean and smells good.</p>
               <p className="text-base font-normal leading-[27px] m-0">
-              Contact PCS Care today to schedule a Free Marble Polishing Consultation!</p>
+              As our team has decades of expertise, we know how to treat any kind of sofas and their accessories in your office.</p>
             </div>
           </div>
 
