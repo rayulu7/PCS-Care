@@ -45,7 +45,7 @@ export default function CorporateChairForm() {
       
         <div className="md:w-7/12 text-center md:text-left px-4">
           <h1
-            className="
+            className="mb-8
               text-[51px]
               font-extrabold
               text-white
@@ -61,10 +61,12 @@ export default function CorporateChairForm() {
             <br />
             
           </h1>
+
+          <p className = "mt-8text-base md:text-lg font-poppins text-white leading-relaxed">Get&nbsp; Best&nbsp; Corporate/Industrial&nbsp; Cleaning&nbsp; &&nbsp; Maintenance&nbsp; Services&nbsp; on &nbsp;par &nbsp;with&nbsp;&nbsp;  international&nbsp;&nbsp;  standards&nbsp; &nbsp; using&nbsp;&nbsp;  the&nbsp;&nbsp;  state-of-the-art&nbsp; machinery&nbsp; and&nbsp; chemicals</p>
            
-          <h4 className="text-[22px] text-white mt-6 tracking-wide">
+          {/* <h4 className="text-[22px] text-white mt-6 tracking-wide">
             Hyderabad &ndash; Bengaluru &ndash; Pune &ndash; Mumbai &ndash; Chennai
-          </h4>
+          </h4> */}
         </div>
 
        
