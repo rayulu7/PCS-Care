@@ -6,6 +6,8 @@ import Banner from './Banner';
 import HomeFlipCards from './HomeBookNow';
 import CorporateServices from '../CorporateCarpetCleaning/CorporateServices';
 import HomeForm from './HomeForm';
+import CorporateOfficialForm from '../CorporateCarpetCleaning/CorporateOfficialForm';
+import HomePage from './HomePage';
 
 const Home = () => {
   return (
@@ -14,7 +16,8 @@ const Home = () => {
       <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4 py-8">
         <Banner />
         
-        <CorporateServices />
+        <HomePage />
+
         {/* <div className="w-full max-w-4xl mx-auto">
     
           <div className="text-center mb-8 md:mb-12">

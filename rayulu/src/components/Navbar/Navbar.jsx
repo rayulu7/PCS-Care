@@ -153,7 +153,7 @@ const Navbar = () => {
 
           <Link className="hidden md:flex items-center gap-4" to="/registration-certificate">
             <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-[#f47b00] transition-colors duration-300">
-              Register
+              Login
             </button>
           </Link>
 
@@ -246,7 +246,7 @@ const Navbar = () => {
 
           <Link to="/registration-certificate" className="w-full text-center">
             <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-[#f47b00] transition-colors duration-300 w-full max-w-xs">
-              Register
+              Login
             </button>
           </Link>
         </div>
