@@ -14,7 +14,7 @@ const Home = () => {
     <div>
       
       <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4 py-8">
-        <Banner />
+        {/* <Banner /> */}
         
         <HomePage />
 
