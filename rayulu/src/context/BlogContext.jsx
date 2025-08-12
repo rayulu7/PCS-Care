@@ -24,7 +24,7 @@ export const BlogProvider = ({ children }) => {
           },
           {
             id: '2',
-            title: 'Second Post: Innovations Ahead',
+            title: 'Second Post: Rayulu Innovations Ahead in this Customized Blog',
             author: 'Admin',
             description: 'A sneak peek into future tech and innovations.',
             contentBlocks: [
