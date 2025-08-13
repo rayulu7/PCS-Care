@@ -22,26 +22,26 @@ const Navbar = () => {
         { name: 'Deep Cleaning', path: '/deep-cleaning' },
       ],
     },
-    {
-      name: 'Home Services',
-      path: '/form',
-      dropdown: true,
-      sublinks: [
-        { name: 'Carpet Cleaning', path: '/home-services/carpet-cleaning' },
-        { name: 'Marble Polishing', path: '/home-services/marble-polishing' },
-        { name: 'Sofa Cleaning', path: '/form' },
-        {
-          name: 'Deep Cleaning',
-          path: '/form',
-          children: [
-            { name: 'Deep Cleaning - Vacant', path: '/home-services/deep-cleaning/vacant' },
-            { name: 'Deep Cleaning Occupied', path: '/home-services/deep-cleaning/occupied' },
-            { name: 'Deep Cleaning - Villa / Duplex / Triplex', path: '/home-services/deep-cleaning/full-home' },
-            { name: 'Intensive Deep Cleaning', path: '/home-services/deep-cleaning/intensive' },
-          ],
-        },
-      ],
-    },
+    // {
+    //   name: 'Home Services',
+    //   path: '/form',
+    //   dropdown: true,
+    //   sublinks: [
+    //     { name: 'Carpet Cleaning', path: '/home-services/carpet-cleaning' },
+    //     { name: 'Marble Polishing', path: '/home-services/marble-polishing' },
+    //     { name: 'Sofa Cleaning', path: '/form' },
+    //     {
+    //       name: 'Deep Cleaning',
+    //       path: '/form',
+    //       children: [
+    //         { name: 'Deep Cleaning - Vacant', path: '/home-services/deep-cleaning/vacant' },
+    //         { name: 'Deep Cleaning Occupied', path: '/home-services/deep-cleaning/occupied' },
+    //         { name: 'Deep Cleaning - Villa / Duplex / Triplex', path: '/home-services/deep-cleaning/full-home' },
+    //         { name: 'Intensive Deep Cleaning', path: '/home-services/deep-cleaning/intensive' },
+    //       ],
+    //     },
+    //   ],
+    // },
     { name: 'Contact Us', path: '/contact' },
   ];
 
