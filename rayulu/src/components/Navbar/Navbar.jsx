@@ -117,7 +117,7 @@ const Navbar = () => {
         }`}
       >
         <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32 max-w-7xl mx-auto">
-          {/* Logo */}
+          
           <Link to="/" className="flex items-center gap-2 flex-shrink-0">
             <img 
               src="/logo.png" 

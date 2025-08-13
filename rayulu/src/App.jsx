@@ -68,7 +68,7 @@ const FloatingContactIcons = () => {
 
   return (
     <div className="fixed right-2 sm:right-4 bottom-4 sm:bottom-6 md:right-6 md:bottom-8 flex flex-col gap-2 sm:gap-3 z-40">
-      {/* Phone */}
+      
       <a
         href="tel:+919014865154"
         className="group transform transition-all duration-300 hover:scale-110"
@@ -81,7 +81,7 @@ const FloatingContactIcons = () => {
         </div>
       </a>
       
-      {/* WhatsApp */}
+      
       <a
         href="https://wa.me/919014865154"
         className="group transform transition-all duration-300 hover:scale-110"
@@ -94,7 +94,7 @@ const FloatingContactIcons = () => {
         </div>
       </a>
       
-      {/* Chat */}
+      
       <a
         href="#"
         className="group transform transition-all duration-300 hover:scale-110"
@@ -107,7 +107,6 @@ const FloatingContactIcons = () => {
         </div>
       </a>
       
-      {/* Back to Top - Only show when scrolled */}
       {isVisible && (
         <button
           onClick={handleBackToTop}
@@ -123,7 +122,7 @@ const FloatingContactIcons = () => {
   );
 };
 
-// Dynamic spacing hook - accounts for Header + Navbar
+
 const useDynamicSpacing = () => {
   const [topSpacing, setTopSpacing] = useState('0px');
   const [isScrolled, setIsScrolled] = useState(false);
@@ -137,15 +136,15 @@ const useDynamicSpacing = () => {
       const width = window.innerWidth;
       const scrolled = window.scrollY > 10;
       
-      // Calculate based on screen size, scroll position, and Header + Navbar heights
-      if (width < 640) { // Mobile
-        setTopSpacing(scrolled ? '100px' : '120px'); // Header + Navbar on mobile
-      } else if (width < 768) { // Large mobile  
-        setTopSpacing(scrolled ? '110px' : '135px'); // Header + Navbar
-      } else if (width < 1024) { // Tablet
-        setTopSpacing(scrolled ? '120px' : '150px'); // Header + Navbar
-      } else { // Desktop
-        setTopSpacing(scrolled ? '130px' : '160px'); // Header + Navbar
+      
+      if (width < 640) { 
+        setTopSpacing(scrolled ? '100px' : '120px'); 
+      } else if (width < 768) {   
+        setTopSpacing(scrolled ? '110px' : '135px'); 
+      } else if (width < 1024) { 
+        setTopSpacing(scrolled ? '120px' : '150px'); 
+      } else { 
+        setTopSpacing(scrolled ? '130px' : '160px'); 
       }
     };
 
@@ -154,7 +153,7 @@ const useDynamicSpacing = () => {
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', calculateSpacing);
     
-    // Recalculate when scroll state changes
+    
     handleScroll();
     
     return () => {
@@ -217,7 +216,7 @@ const App = () => {
             </Routes>
           </MainContent>
           
-          {/* Footer components */}
+          
           <Stats />
           <ClientsCarousel />
           <TestimonialCarousel />

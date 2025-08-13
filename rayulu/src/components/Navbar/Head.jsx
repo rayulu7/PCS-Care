@@ -31,7 +31,7 @@ const Head = () => {
 
   return (
     <div className="bg-black text-white py-1 lg:py-2 px-2 sm:px-3 md:px-4 lg:px-8 xl:px-16">
-      {/* Desktop ONLY (lg+) */}
+      
       <div className="hidden lg:flex justify-end items-center gap-5 xl:gap-6 max-w-7xl mx-auto">
         <div className="flex items-center gap-2">
           <FaWhatsapp className="text-green-400 text-base xl:text-lg" />
@@ -79,7 +79,7 @@ const Head = () => {
         </div>
       </div>
 
-      {/* Mobile & Tablet (below lg) */}
+      {/* Mobile & Tablet view */}
       <div className="flex lg:hidden justify-between items-center w-full gap-2 max-w-7xl mx-auto">
         <div className="flex items-center gap-0.5 shrink-0">
           <FaWhatsapp className="text-green-400 text-[10px] sm:text-xs" />
