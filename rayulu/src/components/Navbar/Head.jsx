@@ -30,104 +30,98 @@ const Head = () => {
   };
 
   return (
-    <div className="bg-black text-white py-2 px-4 md:px-8 lg:px-16">
-      {/* Desktop */}
-      <div className="hidden md:flex justify-end items-center gap-6 max-w-7xl mx-auto">
+    <div className="bg-black text-white py-1 lg:py-2 px-2 sm:px-3 md:px-4 lg:px-8 xl:px-16">
+      {/* Desktop ONLY (lg+) */}
+      <div className="hidden lg:flex justify-end items-center gap-5 xl:gap-6 max-w-7xl mx-auto">
         <div className="flex items-center gap-2">
-          <FaWhatsapp className="text-green-400 text-lg" />
+          <FaWhatsapp className="text-green-400 text-base xl:text-lg" />
           <a
-            href={`https://wa.me/919392612316`}
+            href="https://wa.me/919392612316"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-green-400 transition-colors duration-200"
+            className="hover:text-green-400 transition-colors text-sm xl:text-base"
           >
             9392612316
           </a>
         </div>
 
         <div className="flex items-center gap-2">
-          <FaMapMarkerAlt className="text-red-400 text-lg" />
-          <span>{pincode}</span>
-          <button
-            onClick={() => setIsModalOpen(true)}
-            className="text-gray-300 hover:text-white transition-colors"
-          >
-            <FaEdit className="text-base ml-1" />
+          <FaMapMarkerAlt className="text-red-400 text-base xl:text-lg" />
+          <span className="text-sm xl:text-base">{pincode}</span>
+          <button onClick={() => setIsModalOpen(true)} className="text-gray-300 hover:text-white">
+            <FaEdit className="text-sm xl:text-base ml-1" />
           </button>
         </div>
 
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-2">
           <Link
             to="/corporate-services"
-            className={`flex items-center gap-1 px-4 py-2 rounded-md transition-colors ${
+            className={`flex items-center gap-1 px-3 py-1.5 rounded-md transition-colors text-sm ${
               activeTab === 'commercial'
                 ? 'bg-orange-500 text-white'
                 : 'text-gray-300 hover:text-white hover:bg-orange-600'
             }`}
           >
-            <FaBuilding className="text-lg" />
+            <FaBuilding className="text-base" />
             <span>Commercial</span>
           </Link>
           <Link
             to="/residential-services"
-            className={`flex items-center gap-1 px-4 py-2 rounded-md transition-colors ${
+            className={`flex items-center gap-1 px-3 py-1.5 rounded-md transition-colors text-sm ${
               activeTab === 'residential'
                 ? 'bg-orange-500 text-white'
                 : 'text-gray-300 hover:text-white hover:bg-orange-600'
             }`}
           >
-            <FaHome className="text-lg" />
+            <FaHome className="text-base" />
             <span>Residential</span>
           </Link>
         </div>
       </div>
 
-      {/* Mobile */}
-      <div className="md:hidden flex justify-between items-center w-full gap-2">
-        <div className="flex items-center gap-1 flex-shrink-0">
-          <FaWhatsapp className="text-green-400 text-sm" />
+      {/* Mobile & Tablet (below lg) */}
+      <div className="flex lg:hidden justify-between items-center w-full gap-2 max-w-7xl mx-auto">
+        <div className="flex items-center gap-0.5 shrink-0">
+          <FaWhatsapp className="text-green-400 text-[10px] sm:text-xs" />
           <a
-            href={`https://wa.me/919014865154`}
+            href="https://wa.me/919014865154"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-green-400 text-xs whitespace-nowrap"
+            className="hover:text-green-400 text-[10px] sm:text-xs whitespace-nowrap"
           >
             9014865154
           </a>
         </div>
 
-        <div className="flex items-center gap-1 flex-shrink-0">
-          <FaMapMarkerAlt className="text-red-400 text-sm" />
-          <span className="text-xs whitespace-nowrap">{pincode}</span>
-          <button
-            onClick={() => setIsModalOpen(true)}
-            className="text-gray-300 hover:text-white"
-          >
-            <FaEdit className="text-xs" />
+        <div className="flex items-center gap-0.5 shrink-0">
+          <FaMapMarkerAlt className="text-red-400 text-[10px] sm:text-xs" />
+          <span className="text-[10px] sm:text-xs">{pincode}</span>
+          <button onClick={() => setIsModalOpen(true)} className="text-gray-300 hover:text-white">
+            <FaEdit className="text-[10px] sm:text-xs" />
           </button>
         </div>
 
-        <div className="flex items-center gap-1 flex-shrink-0">
+        <div className="flex items-center gap-0.5 shrink-0">
           <Link
             to="/corporate-services"
-            className={`flex items-center gap-1 px-2 py-1 rounded-md text-xs whitespace-nowrap ${
+            className={`flex items-center gap-0.5 px-1.5 py-0.5 rounded-md text-[10px] sm:text-xs ${
               activeTab === 'commercial'
                 ? 'bg-orange-500 text-white'
                 : 'text-gray-300 hover:text-white hover:bg-orange-600'
             }`}
           >
-            <FaBuilding className="text-xs" />
+            <FaBuilding className="text-[10px] sm:text-xs" />
             <span>Commercial</span>
           </Link>
           <Link
             to="/residential-services"
-            className={`flex items-center gap-1 px-2 py-1 rounded-md text-xs whitespace-nowrap ${
+            className={`flex items-center gap-0.5 px-1.5 py-0.5 rounded-md text-[10px] sm:text-xs ${
               activeTab === 'residential'
                 ? 'bg-orange-500 text-white'
                 : 'text-gray-300 hover:text-white hover:bg-orange-600'
             }`}
           >
-            <FaHome className="text-xs" />
+            <FaHome className="text-[10px] sm:text-xs" />
             <span>Residential</span>
           </Link>
         </div>
@@ -145,11 +139,11 @@ const Head = () => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-black bg-opacity-25" />
+            <div className="fixed inset-0 bg-black/25" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
-            <div className="flex min-h-full items-center justify-center p-4 text-center">
+            <div className="flex min-h-full items-center justify-center p-3 sm:p-4 text-center">
               <Transition.Child
                 as={React.Fragment}
                 enter="ease-out duration-300"
@@ -159,20 +153,17 @@ const Head = () => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-5 text-left align-middle shadow-xl transition-all">
                   <div className="flex justify-between items-center">
-                    <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
+                    <Dialog.Title className="text-base sm:text-lg font-medium text-gray-900">
                       Update Pincode
                     </Dialog.Title>
-                    <button
-                      onClick={() => setIsModalOpen(false)}
-                      className="text-gray-400 hover:text-gray-500"
-                    >
+                    <button onClick={() => setIsModalOpen(false)} className="text-gray-400 hover:text-gray-500">
                       <IoClose className="h-6 w-6" />
                     </button>
                   </div>
 
-                  <div className="mt-4">
+                  <div className="mt-3">
                     <label htmlFor="pincode" className="block text-sm font-medium text-gray-700">
                       Enter 6-digit Pincode
                     </label>
@@ -188,17 +179,17 @@ const Head = () => {
                     />
                   </div>
 
-                  <div className="mt-6 flex justify-end gap-3">
+                  <div className="mt-5 flex justify-end gap-2">
                     <button
                       type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:outline-none"
+                      className="inline-flex justify-center rounded-md px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:outline-none"
                       onClick={() => setIsModalOpen(false)}
                     >
                       Cancel
                     </button>
                     <button
                       type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-orange-500 px-4 py-2 text-sm font-medium text-white hover:bg-orange-600 focus:outline-none"
+                      className="inline-flex justify-center rounded-md bg-orange-500 px-3 py-1.5 text-sm font-medium text-white hover:bg-orange-600 focus:outline-none disabled:opacity-50"
                       onClick={savePincode}
                       disabled={tempPincode.length !== 6}
                     >
