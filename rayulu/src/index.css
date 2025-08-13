@@ -28,4 +28,24 @@
 .animate-flip {
   animation: flip-up 0.3s ease-out;
 }
+@keyframes rippleUp {
+  0% {
+    transform: scale(0) translateY(0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.1) translateY(-30%);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(2) translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.animate-ripple-up {
+  animation: rippleUp 1.2s ease-out infinite;
+  transform-origin: center bottom;
+}
+
 
