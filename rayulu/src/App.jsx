@@ -7,7 +7,7 @@ import {
   FaAngleUp
 } from 'react-icons/fa';
 
-// Components
+
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
@@ -34,7 +34,7 @@ import CorporatePestService from './components/CorporateCarpetCleaning/Corporate
 import CorporateWorkService from './components/CorporateCarpetCleaning/CorporateWorkstationCleaning/CorporateWorkPage';
 import CorporateDeepService from './components/CorporateCarpetCleaning/CorporateDeepCleaning/CorporateDeepPage';
 
-// Constants
+
 const CONTACT_ICONS = [
   {
     icon: FaPhoneAlt,
@@ -57,9 +57,7 @@ const CONTACT_ICONS = [
   }
 ];
 
-/**
- * Smooth scroll to top on route change
- */
+
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -70,9 +68,7 @@ const ScrollToTop = () => {
   return null;
 };
 
-/**
- * Floating contact + scroll buttons
- */
+
 const FloatingContactIcons = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -127,9 +123,7 @@ const ScrollToTopButton = ({ onClick }) => (
   </button>
 );
 
-/**
- * Hook for dynamic top spacing
- */
+
 const useDynamicSpacing = () => {
   const [topSpacing, setTopSpacing] = useState('0px');
 
@@ -156,9 +150,7 @@ const useDynamicSpacing = () => {
   return topSpacing;
 };
 
-/**
- * Main Content Wrapper with overflow control
- */
+
 const MainContent = ({ children }) => {
   const topSpacing = useDynamicSpacing();
   return (
@@ -174,9 +166,7 @@ const MainContent = ({ children }) => {
   );
 };
 
-/**
- * App Component with global overflow control
- */
+
 const App = () => {
   return (
     <div className="overflow-x-hidden">
