@@ -48,4 +48,19 @@
   transform-origin: center bottom;
 }
 
+/* Original animation speed (faster for mobile) */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
+.animate-slide {
+  animation: slide 20s linear infinite;
+}
+
+/* Slower speed for desktop */
+@media (min-width: 768px) {
+  .animate-slide-slower {
+    animation: slide 40s linear infinite;
+  }
+}
