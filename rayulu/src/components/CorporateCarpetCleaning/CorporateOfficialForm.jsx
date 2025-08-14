@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 
-const cities = [
-  "Hyderabad",
-  "Bengaluru",
-  "Pune",
-  "Mumbai",
-  "Chennai"
-];
+const cities = ["Hyderabad", "Bengaluru", "Pune", "Mumbai", "Chennai"];
 
 const services = [
   "Carpet Cleaning",
@@ -40,48 +34,51 @@ export default function CorporateOfficialForm() {
   };
 
   return (
-    <div className="bg-black py-12 px-4 font-poppins">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start">
-      
-        <div className="md:w-7/12 text-center md:text-left px-4">
+    <div className="bg-black py-8 sm:py-12 px-4 font-poppins">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center">
+        
+        {/* Left Content */}
+        <div className="md:w-7/12 text-center md:text-left px-2 sm:px-4">
           <h1
-            className=" mb-8
-              text-[51px]
+            className="
+              mb-4 sm:mb-8
+              text-[32px] sm:text-[40px] md:text-[51px]
               font-extrabold
               text-white
-              leading-[85px]
+              leading-[42px] sm:leading-[60px] md:leading-[85px]
               mt-4 md:mt-0
             "
           >
             Professional Corporate<br />
             Cleaning Services Since 
-            {/* &amp; */}
             <br />
             2005
           </h1>
-           <p className = "mt-8 text-base md:text-lg font-poppins text-white leading-relaxed">Get&nbsp; Best&nbsp; Corporate/Industrial&nbsp; Cleaning&nbsp; &&nbsp; Maintenance&nbsp; Services&nbsp; on &nbsp;par &nbsp;with&nbsp;&nbsp;  international&nbsp;&nbsp;  standards&nbsp; &nbsp; using&nbsp;&nbsp;  the&nbsp;&nbsp;  state-of-the-art&nbsp; machinery&nbsp; and&nbsp; chemicals</p>
-          {/* <h4 className="text-[22px] text-white mt-6 tracking-wide">
-            Hyderabad &ndash; Bengaluru &ndash; Pune &ndash; Mumbai &ndash; Chennai
-          </h4> */}
+          <p className="mt-4 sm:mt-8 text-sm sm:text-base md:text-lg text-white leading-relaxed">
+            Get Best Corporate/Industrial Cleaning &amp; Maintenance Services on par with international standards using state-of-the-art machinery and chemicals
+          </p>
         </div>
 
-       
+        {/* Right Form */}
         <div
           className="
-            mt-8 md:mt-0
-            md:w-[470px] w-full h-[590px]
+            mt-6 md:mt-0
+            md:w-[470px] w-full
             bg-white rounded-lg shadow-lg
-            p-8 overflow-auto
-            mx-4
+            p-4 sm:p-6 md:p-8
+            overflow-auto
+            mx-0 sm:mx-4
           "
         >
-          <h2 className="text-xl font-bold mb-6 text-gray-800">Contact us</h2>
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4" autoComplete="off">
+          <h2 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 text-gray-800">
+            Contact us
+          </h2>
+          <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:gap-4" autoComplete="off">
             <input
               type="text"
               name="name"
               required
-              className="border rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-gray-100"
+              className="border rounded px-3 py-2 sm:px-4 sm:py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-gray-100 text-sm sm:text-base"
               placeholder="Your Name"
               value={form.name}
               onChange={handleChange}
@@ -90,7 +87,7 @@ export default function CorporateOfficialForm() {
               type="tel"
               name="phone"
               required
-              className="border rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-gray-100"
+              className="border rounded px-3 py-2 sm:px-4 sm:py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-gray-100 text-sm sm:text-base"
               placeholder="Phone Number"
               value={form.phone}
               onChange={handleChange}
@@ -99,7 +96,7 @@ export default function CorporateOfficialForm() {
               type="email"
               name="email"
               required
-              className="border rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-gray-100"
+              className="border rounded px-3 py-2 sm:px-4 sm:py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-gray-100 text-sm sm:text-base"
               placeholder="Email"
               value={form.email}
               onChange={handleChange}
@@ -107,7 +104,7 @@ export default function CorporateOfficialForm() {
             <select
               name="city"
               required
-              className="border rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-gray-100"
+              className="border rounded px-3 py-2 sm:px-4 sm:py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-gray-100 text-sm sm:text-base"
               value={form.city}
               onChange={handleChange}
             >
@@ -119,7 +116,7 @@ export default function CorporateOfficialForm() {
             <select
               name="service"
               required
-              className="border rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-gray-100"
+              className="border rounded px-3 py-2 sm:px-4 sm:py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-gray-100 text-sm sm:text-base"
               value={form.service}
               onChange={handleChange}
             >
@@ -134,10 +131,11 @@ export default function CorporateOfficialForm() {
                 bg-yellow-500 
                 text-white 
                 font-bold 
-                py-3 
+                py-2 sm:py-3 
                 rounded 
                 hover:bg-yellow-600 
                 transition
+                text-sm sm:text-base
               "
             >
               Submit
