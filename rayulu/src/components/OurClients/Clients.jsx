@@ -13,7 +13,7 @@ const logoData = [
   { src: "/img10.jpg", alt: 'Client 10', width: 199, height: 100 },
   { src: "/img11.jpg", alt: 'Client 11', width: 199, height: 100 },
   { src: "/img12.jpg", alt: 'Client 12', width: 199, height: 100 },
-  { src: "/img13.jpg", alt: 'Client 13', width: 199, height: 100 },
+  { src: "/img13.png", alt: 'Client 13', width: 199, height: 100 },
 ];
 
 export default function ClientsCarousel() {
@@ -26,11 +26,11 @@ export default function ClientsCarousel() {
 
     let animationId;
     let position = 0;
-    const speed = window.innerWidth < 768 ? 2 : 1; // Faster on mobile
+    const speed = window.innerWidth < 768 ? 2 : 1; 
 
     const animate = () => {
       position -= speed;
-      // Reset position when half of the content has scrolled
+      
       if (position <= -track.scrollWidth / 2) {
         position = 0;
       }
@@ -38,7 +38,7 @@ export default function ClientsCarousel() {
       animationId = requestAnimationFrame(animate);
     };
 
-    // Small delay to ensure DOM is ready
+    
     const startTimer = setTimeout(animate, 100);
 
     return () => {
