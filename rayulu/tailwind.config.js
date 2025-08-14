@@ -7,7 +7,25 @@ export default {
   theme: {
     extend: {
 
-      
+      animation: {
+        'ripple-up': 'ripple-up 1.2s ease-out infinite',
+      },
+      keyframes: {
+        'ripple-up': {
+          '0%': { 
+            transform: 'scale(0) translateY(0)',
+            opacity: '0.7' 
+          },
+          '50%': { 
+            transform: 'scale(1.1) translateY(-30%)',
+            opacity: '0.4' 
+          },
+          '100%': { 
+            transform: 'scale(2) translateY(-100%)',
+            opacity: '0' 
+          }
+        }
+      },
 
       keyframes: {
         slide: {

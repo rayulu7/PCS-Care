@@ -123,7 +123,7 @@ const ScrollToTopButton = ({ onClick }) => (
     <div className="w-12 h-12 sm:w-14 sm:h-14 bg-orange-500 shadow-xl hover:shadow-2xl border-2 border-white flex items-center justify-center relative z-10 transition-all duration-300 ease-in-out rounded-none">
       <FaAngleUp className="text-white text-xl sm:text-2xl transform transition-transform duration-300 group-hover:rotate-12 group-active:translate-y-px" />
     </div>
-    <span className="absolute inset-0 bg-orange-400 opacity-0 group-hover:opacity-70 rounded-none animate-ripple-up scale-0 group-hover:scale-100 pointer-events-none z-0" />
+    <span className="absolute inset-0 bg-orange-400 opacity-0 group-hover:opacity-70 rounded-none animate-[ripple-up_1.2s_ease-out_infinite] origin-bottom scale-0 group-hover:scale-100 pointer-events-none z-0" />
   </button>
 );
 
