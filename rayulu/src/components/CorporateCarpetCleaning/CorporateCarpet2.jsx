@@ -1,7 +1,5 @@
-
 import React from 'react';
-
-import CorporateCities from './CorporateCities.jsx'
+import CorporateCities from './CorporateCities.jsx';
 import CorporateCarpetAreasSection from './CorporateCarpetArea.jsx';
 import CorporateAreasSection from './CorporateAreas.jsx';
 
@@ -31,8 +29,6 @@ const CorporateCarpetCleaningTypes = () => {
   ];
 
   const ServiceCard = ({ service }) => (
-     
-     
     <div
       className="
         group
@@ -43,27 +39,33 @@ const CorporateCarpetCleaningTypes = () => {
         shadow-lg
         overflow-hidden
         flex flex-col
-        w-[400px]
-        h-[693.6px]
+        w-full
+        max-w-[400px]
+        h-auto
+        min-h-[500px]
+        sm:min-h-[550px]
+        md:min-h-[600px]
+        lg:h-[693.6px]
+        mx-auto
       "
     >
-      
       <img
         src={service.image}
         alt={service.title}
         className="
           object-cover
           w-full
-          h-[157px]
+          h-[120px]
+          sm:h-[140px]
+          md:h-[157px]
           border-b border-gray-200
         "
       />
 
-     
-      <div className="p-6 flex-1 flex flex-col">
+      <div className="p-4 sm:p-5 md:p-6 flex-1 flex flex-col">
         <h3
           className="
-            text-xl font-bold mb-4
+            text-lg sm:text-xl font-bold mb-3 sm:mb-4
             text-gray-800
             group-hover:text-[#ffc107]
             transition-colors duration-300
@@ -73,10 +75,10 @@ const CorporateCarpetCleaningTypes = () => {
         </h3>
         <p
           className="
-            text-[15px]
-            leading-[27px]
-            pt-4
-            pb-5
+            text-sm sm:text-[15px]
+            leading-6 sm:leading-[27px]
+            pt-2 sm:pt-4
+            pb-3 sm:pb-5
             text-black
             text-justify
             flex-1
@@ -90,24 +92,27 @@ const CorporateCarpetCleaningTypes = () => {
 
   return (
     <>
-    <div className="py-12">
-    
-      <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-gray-800">
-          Types of Carpet Cleaning
-        </h1>
-      </div>
+      <div className="py-8 sm:py-10 md:py-12">
+        {/* Heading */}
+        <div className="text-center mb-6 sm:mb-8">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">
+            Types of Carpet Cleaning
+          </h1>
+        </div>
 
-      
-      <div className="flex justify-center space-x-6 px-4">
-        {services.map(s => (
-          <ServiceCard key={s.id} service={s} />
-        ))}
+        {/* Services Grid */}
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center">
+            {services.map(s => (
+              <ServiceCard key={s.id} service={s} />
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
-    <CorporateCities />
-    <CorporateAreasSection />
-   </>
+      
+      <CorporateCities />
+      <CorporateAreasSection />
+    </>
   );
 };
 

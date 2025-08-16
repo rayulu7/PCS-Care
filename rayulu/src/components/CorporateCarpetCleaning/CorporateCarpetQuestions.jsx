@@ -19,7 +19,7 @@ const CorporateCarpetQuestions = () => {
     },
     {
       question: "How often should I go for Carpet Cleaning Services?",
-      answer: "It depends upon the footfall in a particular area. In high footfall areas like entrances,pathways we recommend heavy duty vacuuming regularly and professional carpet shampooing once in a month."
+      answer: "It depends upon the footfall in a particular area. In high footfall areas like entrances, pathways we recommend heavy duty vacuuming regularly and professional carpet shampooing once in a month."
     },
     {
       question: "What machines do you use for carpet cleaning?",
@@ -44,48 +44,51 @@ const CorporateCarpetQuestions = () => {
   };
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-12 sm:py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-     
-        <div className="text-center mb-12">
-          <h2 className="font-bold mb-4" style={{ fontSize: '48px', color: '#1c1d3e' }}>
+        {/* Heading */}
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="font-bold text-3xl sm:text-4xl md:text-[48px] text-[#1c1d3e]">
             Frequently Asked Questions
           </h2>
         </div>
 
-       
-        <div className="bg-white">
+        {/* FAQ Accordion */}
+        <div className="bg-white rounded-lg shadow-sm overflow-hidden">
           {faqs.map((faq, index) => (
             <div
               key={index}
               className="border-b border-gray-200 last:border-b-0"
             >
-            
+              {/* Question Button */}
               <button
                 onClick={() => toggleQuestion(index)}
-                className="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none hover:bg-gray-50 transition-colors duration-150"
+                className="w-full px-4 sm:px-6 py-4 sm:py-5 text-left flex items-center justify-between focus:outline-none hover:bg-gray-50 transition-colors duration-150"
+                aria-expanded={openQuestion === index}
+                aria-controls={`faq-answer-${index}`}
               >
-                <h3 className="font-bold pr-6 flex-1" style={{ fontSize: '22px', color: 'black' }}>
+                <h3 className="font-semibold sm:font-bold pr-4 sm:pr-6 flex-1 text-base sm:text-lg md:text-xl text-gray-900">
                   {faq.question}
                 </h3>
-                <div className="flex-shrink-0 w-10 h-10 bg-orange-400 rounded flex items-center justify-center hover:bg-orange-500 transition-colors duration-150">
+                <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-orange-400 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors duration-150">
                   {openQuestion === index ? (
-                    <Minus className="w-4 h-4 text-white" />
+                    <Minus className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
                   ) : (
-                    <Plus className="w-4 h-4 text-white" />
+                    <Plus className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
                   )}
                 </div>
               </button>
 
-        
+              {/* Answer Section */}
               <div 
+                id={`faq-answer-${index}`}
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                  openQuestion === index ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
+                  openQuestion === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <div className="px-6 pb-5">
-                  <div className="bg-gray-100 rounded p-4">
-                    <p className="text-gray-600 text-sm leading-relaxed whitespace-pre-line">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-5">
+                  <div className="bg-gray-50 rounded-lg p-3 sm:p-4">
+                    <p className="text-gray-600 text-sm sm:text-base leading-relaxed sm:leading-loose whitespace-pre-line">
                       {faq.answer}
                     </p>
                   </div>
