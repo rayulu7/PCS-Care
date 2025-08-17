@@ -36,7 +36,7 @@ const Head = () => {
         <div className="flex items-center gap-2">
           <FaWhatsapp className="text-green-400 text-base xl:text-lg" />
           <a
-            href="https://wa.me/919392612316"
+            href="https://wa.me/919392612314"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-green-400 transition-colors text-sm xl:text-base"

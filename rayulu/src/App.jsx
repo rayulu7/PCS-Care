@@ -38,13 +38,13 @@ import CorporateDeepService from './components/CorporateCarpetCleaning/Corporate
 const CONTACT_ICONS = [
   {
     icon: FaPhoneAlt,
-    href: 'tel:+919014865154',
+    href: 'tel:+919392612316',
     bg: 'from-blue-600 to-blue-700',
     label: 'Call Phone'
   },
   {
     icon: FaWhatsapp,
-    href: 'https://wa.me/919014865154',
+    href: 'https://wa.me/9392612316',
     bg: 'from-green-500 to-green-600',
     label: 'WhatsApp',
     target: '_blank'
