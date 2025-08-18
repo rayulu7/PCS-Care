@@ -61,7 +61,7 @@ const Footer = () => {
       <hr className="my-6 border-gray-300" />
 
       <div className="text-center text-sm">
-        Copyright © 2024 <span className="text-orange-500 font-semibold">PCS Care</span> All Rights Reserved
+        Copyright © 2025 <span className="text-orange-500 font-semibold">PCS Care</span> All Rights Reserved
       </div>
     </footer>
   );
