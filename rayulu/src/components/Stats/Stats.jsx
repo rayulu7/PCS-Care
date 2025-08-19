@@ -133,7 +133,7 @@ const Stats = () => {
             {stat.icon}
             <div className="text-white text-xl sm:text-2xl md:text-3xl font-bold">
               <AnimatedCounter target={stat.number} delay={i * 300} trigger={isVisible} />
-              {i === 3 && '+'}
+              {(i === 1 || i === 2 || i === 3) && '+'}
             </div>
             <p className="text-white text-xs sm:text-sm md:text-base mt-1 text-center font-medium">
               {stat.label}
