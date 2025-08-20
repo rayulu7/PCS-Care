@@ -7,7 +7,7 @@ import Head from './Head';
 const Navbar = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'About Us', path: '/about' },
+    { name: 'About Us', path: '#about-us', href: "#about-us" },
     {
       name: 'Services',
       path: '/corporate-services',
@@ -22,27 +22,7 @@ const Navbar = () => {
         { name: 'Deep Cleaning', path: '/deep-cleaning' },
       ],
     },
-    // {
-    //   name: 'Home Services',
-    //   path: '/form',
-    //   dropdown: true,
-    //   sublinks: [
-    //     { name: 'Carpet Cleaning', path: '/home-services/carpet-cleaning' },
-    //     { name: 'Marble Polishing', path: '/home-services/marble-polishing' },
-    //     { name: 'Sofa Cleaning', path: '/form' },
-    //     {
-    //       name: 'Deep Cleaning',
-    //       path: '/form',
-    //       children: [
-    //         { name: 'Deep Cleaning - Vacant', path: '/home-services/deep-cleaning/vacant' },
-    //         { name: 'Deep Cleaning Occupied', path: '/home-services/deep-cleaning/occupied' },
-    //         { name: 'Deep Cleaning - Villa / Duplex / Triplex', path: '/home-services/deep-cleaning/full-home' },
-    //         { name: 'Intensive Deep Cleaning', path: '/home-services/deep-cleaning/intensive' },
-    //       ],
-    //     },
-    //   ],
-    // },
-    { name: 'Contact Us', path: '/contact' },
+    { name: 'Contact Us', path: '/contact', href: "#contact-us" },
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -135,13 +115,23 @@ const Navbar = () => {
                 onMouseEnter={() => link.dropdown && handleDesktopDropdownEnter(i)}
                 onMouseLeave={() => link.dropdown && handleDesktopDropdownLeave(i)}
               >
-                <Link
-                  to={link.path}
-                  className="flex items-center font-['League_Spartan'] text-base xl:text-lg font-medium hover:text-[#f47b00] transition-colors duration-200 py-2 px-2"
-                >
-                  {link.name}
-                  {link.dropdown && <FiChevronDown className="ml-1 text-sm" />}
-                </Link>
+                {link.href ? (
+                  <a
+                    href={link.href}
+                    className="flex items-center font-['League_Spartan'] text-base xl:text-lg font-medium hover:text-[#f47b00] transition-colors duration-200 py-2 px-2"
+                  >
+                    {link.name}
+                    {link.dropdown && <FiChevronDown className="ml-1 text-sm" />}
+                  </a>
+                ) : (
+                  <Link
+                    to={link.path}
+                    className="flex items-center font-['League_Spartan'] text-base xl:text-lg font-medium hover:text-[#f47b00] transition-colors duration-200 py-2 px-2"
+                  >
+                    {link.name}
+                    {link.dropdown && <FiChevronDown className="ml-1 text-sm" />}
+                  </Link>
+                )}
 
                 {link.dropdown && desktopDropdownOpen[i] && (
                   <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-1 bg-white shadow-xl rounded-lg border border-gray-100 py-2 z-50 min-w-64 max-w-72">
@@ -237,13 +227,23 @@ const Navbar = () => {
                   className="flex items-center justify-between py-2 cursor-pointer"
                   onClick={() => link.dropdown ? toggleMobileDropdown(i) : closeAllMenus()}
                 >
-                  <Link 
-                    to={link.path} 
-                    className="text-base sm:text-lg font-medium flex-1"
-                    onClick={(e) => !link.dropdown && closeAllMenus()}
-                  >
-                    {link.name}
-                  </Link>
+                  {link.href ? (
+                    <a 
+                      href={link.href} 
+                      className="text-base sm:text-lg font-medium flex-1"
+                      onClick={closeAllMenus}
+                    >
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link 
+                      to={link.path} 
+                      className="text-base sm:text-lg font-medium flex-1"
+                      onClick={(e) => !link.dropdown && closeAllMenus()}
+                    >
+                      {link.name}
+                    </Link>
+                  )}
                   {link.dropdown && (
                     <span className="ml-2">
                       {mobileDropdownOpen[i] ? <FiChevronUp /> : <FiChevronDown />}

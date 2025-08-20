@@ -8,9 +8,9 @@ import CorporateServices from '../CorporateCarpetCleaning/CorporateServices';
 import HomeForm from './HomeForm';
 import CorporateOfficialForm from '../CorporateCarpetCleaning/CorporateOfficialForm';
 import HomePage from './HomePage';
-import CorporateAbout from '../CorporateCarpetCleaning/CorporateAbout';
-import AboutAreasSection from '../AboutUs/AboutAreas';
+
 import Contact from '../ContactUs/Contact';
+import About from '../AboutUs/About';
 
 const Home = () => {
   return (
@@ -51,8 +51,7 @@ const Home = () => {
         </div> */}
       </div>
       <HomeFlipCards />
-      <CorporateAbout />
-      <AboutAreasSection />
+      <About />
       <Contact />
       
     </div>

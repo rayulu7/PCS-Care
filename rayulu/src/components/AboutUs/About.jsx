@@ -5,7 +5,7 @@ import AboutAreasSection from './AboutAreas';
 
 const About = () => {
   return (
-    <>
+    <div id = "about-us">
      <CorporateAbout />
      <AboutAreasSection />
 
@@ -17,7 +17,7 @@ const About = () => {
         </h4> 
       </div>
     </section> */}
-    </>
+    </div>
     
   );
 };
