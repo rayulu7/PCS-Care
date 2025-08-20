@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Link} from 'react-router-dom'
 
 const cities = [
   "Hyderabad",
@@ -78,7 +79,17 @@ export default function CorporateCarpetForm() {
             mx-4
           "
         >
-          <h2 className="text-xl font-bold mb-6 text-gray-800">Contact us</h2>
+          <div className="flex justify-between items-center mb-4 sm:mb-6">
+            <h2 className="text-lg sm:text-xl font-bold text-gray-800">
+              Contact us
+            </h2>
+            <Link 
+              to="/residential-services" 
+              className="text-xs sm:text-sm text-orange-600 hover:text-blue-800 cursor-pointer ml-2 whitespace-nowrap"
+            >
+              Click here for Residential
+            </Link>
+          </div>
           <form onSubmit={handleSubmit} className="flex flex-col gap-4" autoComplete="off">
             <input
               type="text"
