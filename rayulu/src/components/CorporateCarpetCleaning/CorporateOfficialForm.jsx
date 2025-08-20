@@ -79,7 +79,7 @@ export default function CorporateOfficialForm() {
               to="/residential-services" 
               className="text-xs sm:text-sm text-orange-600 hover:text-blue-800 cursor-pointer ml-2 whitespace-nowrap"
             >
-              click here for Residential
+              Click here for Residential
             </Link>
           </div>
           
