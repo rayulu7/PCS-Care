@@ -10,7 +10,7 @@ const cardData = [
     image: './carpetCleaningService.jpg',
     title: "Carpet Cleaning",
     description: "Make your carpets dust-free and allergen-free using our low moisture, eco-friendly and biodegradable chemicals.",
-    path: "/services/office-carpet-cleaning"
+    path: "/Corporate-services/carpet-cleaning"
   },
   {
     image: './marblePolishingService.jpg',
@@ -22,31 +22,31 @@ const cardData = [
     image: './sofaCleaningService.jpg',
     title: "Sofa Cleaning",
     description: "Get your sofas cleaned with Eco-Friendly Chemicals containing only 10% moisture to increase the life of Fabric.",
-    path: "/services/sofa-cleaning"
+    path: "/sofa-cleaning"
   },
   {
     image: './chairCleaningService.jpg',
     title: "Chair Cleaning",
     description: "Get your Chair cleaned with Eco-Friendly Chemicals containing only 10% moisture to increase the life of Fabric.",
-    path: "/services/chair-cleaning"
+    path: "/chair-cleaning"
   },
   {
     image: "./pestControlService.jpg",
     title: "Pest Control",
     description: "Protect your office/Industry against pests by engaging our experts & professionals with 19+ years of experience.",
-    path: "/services/pest-control"
+    path: "/pest-control"
   },
   {
     image: "./workstationService.jpg",
     title: "Workstation Panels/Rollers",
     description: "PCS Care improves the Indoor Air Quality by making the panels/rollers allergen and dust free.",
-    path: "/services/workstation-cleaning"
+    path: "/workstation-cleaning"
   },
   {
     image: "./deepCleaningService.avif",
     title: "Deep Cleaning",
     description: "Our professional team ensures a clean and dust-free office atmosphere with optimum indoor air quality to increase employee productivity.",
-    path: "/services/deep-cleaning"
+    path: "/deep-cleaning"
   }
 ];
 
@@ -64,7 +64,7 @@ const ServiceCard = ({ image, title, description, path }) => {
       </Link>
       <div className="flex flex-col items-center w-full z-10 relative flex-1 justify-between">
         <div className="w-full text-center">
-          <h3 className="text-xl sm:text-2xl font-poppins text-gray-800 mb-1 sm:mb-3 group-hover:text-white transition-colors">
+          <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-1 sm:mb-3 group-hover:text-white transition-colors">
             {title}
           </h3>
           <p className="text-sm sm:text-base text-gray-600 font-poppins mb-2 sm:mb-6 group-hover:text-white transition-colors">
