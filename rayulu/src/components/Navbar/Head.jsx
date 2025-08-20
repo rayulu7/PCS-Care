@@ -41,7 +41,7 @@ const Head = () => {
             rel="noopener noreferrer"
             className="hover:text-green-400 transition-colors text-sm xl:text-base"
           >
-            9392612316
+            9392612314
           </a>
         </div>
 
@@ -84,12 +84,12 @@ const Head = () => {
         <div className="flex items-center gap-0.5 shrink-0">
           <FaWhatsapp className="text-green-400 text-[10px] sm:text-xs" />
           <a
-            href="https://wa.me/919014865154"
+            href="https://wa.me/919392612314"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-green-400 text-[10px] sm:text-xs whitespace-nowrap"
           >
-            9014865154
+            9392612314
           </a>
         </div>
 

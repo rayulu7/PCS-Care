@@ -4,6 +4,9 @@ import React from 'react'
 export default function CorporateAbout() {
   return (
     <section className="bg-white py-16 px-4">
+      <span className="font-poppins text-[35px] font-bold text-center text-[#FFA500] block mb-2">
+            About Us
+          </span>
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-center gap-12 items-start">
 
         {/* LEFT: IMAGE (470×775) */}
@@ -26,9 +29,9 @@ export default function CorporateAbout() {
         {/* RIGHT: CONTENT */}
         <div className="relative rounded-lg overflow-hidden p-4 md:p-8 w-full">
           {/* Label */}
-          <span className="font-poppins text-[15px] text-[#FFA500] block mb-2">
+          {/* <span className="font-poppins text-[15px] text-[#FFA500] block mb-2">
             About Us
-          </span>
+          </span> */}
 
           {/* Heading */}
           <h2 className="font-poppins font-bold text-2xl sm:text-3xl md:text-[37px] leading-[1.3] md:leading-[60px] text-[#1C1D3E] mb-6">
@@ -55,7 +58,7 @@ export default function CorporateAbout() {
           <div className="flex flex-col sm:flex-row items-start mt-8">
             {/* Callout */}
             <div className="flex-shrink-0 text-center mb-6 sm:mb-0 sm:mr-6">
-              <span className="font-poppins block text-6xl sm:text-[80px] leading-none text-[#FFA500]">
+              <span className="font-poppins font-bold block text-6xl sm:text-[80px] leading-none text-[#FFA500]">
                 19+
               </span>
               <span className="font-poppins text-2xl sm:text-[30px] font-bold text-[#1C1D3E] block mt-2">
