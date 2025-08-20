@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const cities = ["Hyderabad", "Bengaluru", "Pune", "Mumbai", "Chennai"];
 
@@ -70,9 +71,18 @@ export default function CorporateOfficialForm() {
             mx-0 sm:mx-4
           "
         >
-          <h2 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 text-gray-800">
-            Contact us
-          </h2>
+          <div className="flex justify-between items-center mb-4 sm:mb-6">
+            <h2 className="text-lg sm:text-xl font-bold text-gray-800">
+              Contact us
+            </h2>
+            <Link 
+              to="/residential-services" 
+              className="text-xs sm:text-sm text-orange-600 hover:text-blue-800 cursor-pointer ml-2 whitespace-nowrap"
+            >
+              click here for Residential
+            </Link>
+          </div>
+          
           <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:gap-4" autoComplete="off">
             <input
               type="text"

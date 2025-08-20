@@ -12,8 +12,8 @@ const HomeFlipCards = () => {
         "Removing accumulated dust and debris"
       ],
       details: "3 Services / Year",
-      price: "Rs. 10907/-",
-      lastBooking: "Last Booking on Jul 08, 2025.07.04am"
+      price: "10%",
+      lastBooking: "Last Booking on Aug 08, 2025.07.04am"
     },
     {
       title: "Marble Cleaning",
@@ -21,8 +21,8 @@ const HomeFlipCards = () => {
         "Stain Removal",
         "Polishing + sealing"
       ],
-      details: "3 Services / Year",
-      price: "Rs. 8350/-",
+      details: "4 Services / Year",
+      price: "12.5%",
       lastBooking: "Last Booking on Jul 08, 2025.04.47am"
     },
     {
@@ -32,8 +32,8 @@ const HomeFlipCards = () => {
         "Spot Treatment",
         "Rinsing + Extraction + Drying"
       ],
-      details: "6 Services / Year",
-      price: "Rs. 14999/-",
+      details: "4 Services / Year",
+      price: "15%",
       lastBooking: "Last Booking on Jul 07, 2025.11.23am"
     },
     {
@@ -43,8 +43,8 @@ const HomeFlipCards = () => {
         "Dry Cleaning",
         "Shampooing + Bonnet Cleaning"
       ],
-      details: "2 Services / Year",
-      price: "Rs. 6500/-",
+      details: "6 Services / Year",
+      price: "17.5%",
       lastBooking: "Last Booking on Jul 06, 2025.09.15am"
     }
   ];
@@ -56,7 +56,7 @@ const HomeFlipCards = () => {
   return (
     <div className="min-h-[50vh] bg-gray-50 py-8 px-4 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-8 sm:mb-12">RECOMMENDED</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-8 sm:mb-12">Avail Discounts</h1>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {services.map((service, index) => (
@@ -101,7 +101,7 @@ const HomeFlipCards = () => {
 
                   <div>
                     <p className="text-xs sm:text-sm font-semibold">{service.details}</p>
-                    <p className="text-base sm:text-lg font-bold my-1 sm:my-2">{service.price}</p>
+                    <p className="text-base sm:text-lg font-bold my-1 sm:my-2">{service.price} off</p>
                   </div>
                 </div>
                 

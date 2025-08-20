@@ -27,7 +27,7 @@ export default function CorporateAbout() {
         <div className="relative rounded-lg overflow-hidden p-4 md:p-8 w-full">
           {/* Label */}
           <span className="font-poppins text-[15px] text-[#FFA500] block mb-2">
-            About Company
+            About Us
           </span>
 
           {/* Heading */}

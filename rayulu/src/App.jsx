@@ -38,23 +38,23 @@ import CorporateDeepService from './components/CorporateCarpetCleaning/Corporate
 const CONTACT_ICONS = [
   {
     icon: FaPhoneAlt,
-    href: 'tel:+919392612316',
+    href: 'tel:+919392612314',
     bg: 'from-blue-600 to-blue-700',
     label: 'Call Phone'
   },
   {
     icon: FaWhatsapp,
-    href: 'https://wa.me/9392612316',
+    href: 'https://wa.me/9392612314',
     bg: 'from-green-500 to-green-600',
     label: 'WhatsApp',
     target: '_blank'
   },
-  {
-    icon: FaCommentDots,
-    href: '#',
-    bg: 'from-purple-600 to-purple-700',
-    label: 'Chatbot'
-  }
+  // {
+  //   icon: FaCommentDots,
+  //   href: '#',
+  //   bg: 'from-purple-600 to-purple-700',
+  //   label: 'Chatbot'
+  // }
 ];
 
 
