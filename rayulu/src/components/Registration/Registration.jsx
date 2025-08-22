@@ -1,16 +1,29 @@
 import React from 'react';
 
-const Register = () => {
-  return (
-    <section className="min-h-screen flex items-center justify-center mb-8 bg-black text-white">
-      <div className="h-full flex flex-col justify-center max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-6xl font-bold text-white mb-6">Register/Login</h1>
-        <h4 className="text-[32px] text-white mt-6 tracking-wide">
-          Hyderabad &ndash; Bengaluru &ndash; Pune &ndash; Mumbai &ndash; Chennai
-        </h4> 
-      </div>
-    </section>
-  );
+export default function Register() {
+    return (
+        <div className = "min-h-screen flex items-center justify-center bg-orange-50">
+            <div className="bg-white text-gray-500 max-w-96 mx-4 md:p-6 p-4 text-left text-sm rounded-xl shadow-[0px_0px_10px_0px] shadow-black/10">
+            <h2 className="text-2xl font-semibold mb-6 text-center text-gray-800">Welcome back</h2>
+            <form>
+                <input id="email" className="w-full bg-transparent border my-3 border-gray-500/30 outline-none rounded-full py-2.5 px-4" type="email" placeholder="Enter your email" required />
+                <input id="password" className="w-full bg-transparent border mt-1 border-gray-500/30 outline-none rounded-full py-2.5 px-4" type="password" placeholder="Enter your password" required />
+                <div className="text-right py-4">
+                    <a className="text-blue-600 underline" href="#">Forgot Password</a>
+                </div>
+                <button type="submit" className="w-full mb-3 bg-orange-500 py-2.5 rounded-full text-white">Log in</button>
+            </form>
+            <p className="text-center mt-4">Don’t have an account? <a href="#" className="text-blue-500 underline">Signup</a></p>
+            <button type="button" className="w-full flex items-center gap-2 justify-center mt-5 bg-black py-2.5 rounded-full text-white">
+                <img className="h-4 w-4" src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/login/appleLogo.png" alt="appleLogo" />
+                Log in with Apple
+            </button>
+            <button type="button" className="w-full flex items-center gap-2 justify-center my-3 bg-white border border-gray-500/30 py-2.5 rounded-full text-gray-800">
+                <img className="h-4 w-4" src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/login/googleFavicon.png" alt="googleFavicon" />
+                Log in with Apple
+            </button>
+        </div>
+        </div>
+        
+    );
 };
-
-export default Register;

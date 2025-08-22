@@ -175,7 +175,7 @@ const Navbar = () => {
           {/* Desktop Login Button */}
           <Link 
             className="hidden lg:flex items-center flex-shrink-0" 
-            to="/registration-certificate"
+            to="/login"
           >
             <button className="bg-black text-white px-4 xl:px-6 py-2 rounded-full hover:bg-[#f47b00] transition-colors duration-300 text-sm xl:text-base">
               Login
@@ -301,7 +301,7 @@ const Navbar = () => {
 
             {/* Mobile Login Button */}
             <div className="pt-4">
-              <Link to="/registration-certificate" onClick={closeAllMenus}>
+              <Link to="/login" onClick={closeAllMenus}>
                 <button className="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-colors duration-300 w-full text-sm sm:text-base">
                   Login
                 </button>
