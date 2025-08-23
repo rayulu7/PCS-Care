@@ -17,9 +17,10 @@ const Navbar = () => {
         { name: 'Marble Polishing', path: '/marble-polishing' },
         { name: 'Sofa Cleaning', path: '/sofa-cleaning' },
         { name: 'Chair Cleaning', path: '/chair-cleaning' },
-        { name: 'Pest Control', path: '/pest-control' },
         { name: 'Workstation Panels/Rollers/Blinds Cleaning', path: '/workstation-cleaning' },
         { name: 'Deep Cleaning', path: '/deep-cleaning' },
+        { name: 'Pest Control', path: '/pest-control' },
+
       ],
     },
     { name: 'Contact Us', path: '/contact', href: "#contact-us" },
@@ -134,7 +135,7 @@ const Navbar = () => {
                 )}
 
                 {link.dropdown && desktopDropdownOpen[i] && (
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-1 bg-white shadow-xl rounded-lg border border-gray-100 py-2 z-50 min-w-64 max-w-72">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-1 bg-white shadow-xl rounded-lg border border-gray-100 py-2 z-50 min-w-max">
                     {link.sublinks?.map((sublink, j) => (
                       <div key={j} className="relative group/sub">
                         <div className="flex justify-between items-center hover:bg-[#f47b00] hover:text-white">
