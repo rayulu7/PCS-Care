@@ -15,7 +15,7 @@ export const BlogProvider = ({ children }) => {
             description: 'This is the first blog post description.',
             contentBlocks: [
               { type: 'paragraph', text: 'This is a detailed introduction to the blog system.' },
-              { type: 'image', src: 'https://source.unsplash.com/random/800x400/?technology', caption: 'Tech insights' },
+              { type: 'image', src: 'https://w0.peakpx.com/wallpaper/710/574/HD-wallpaper-roronoa-zoro-zoro-smile.jpg', caption: 'Tech insights' },
               { type: 'paragraph', text: 'More engaging content follows here...' },
               { type: 'banner', text: '🔥 Stay tuned for more! 🔥' },
               { type: 'paragraph', text: 'End of first post content.' }
@@ -24,12 +24,12 @@ export const BlogProvider = ({ children }) => {
           },
           {
             id: '2',
-            title: 'Second Post: Rayulu Innovations Ahead in this Customized Blog',
+            title: 'Second Post: SubbiReddy Innovations Ahead in this Customized Blog',
             author: 'Admin',
             description: 'A sneak peek into future tech and innovations.',
             contentBlocks: [
               { type: 'paragraph', text: 'Exploring AI, robotics, and the future.' },
-              { type: 'image', src: 'https://source.unsplash.com/random/800x400/?ai', caption: 'AI powering the world' },
+              { type: 'image', src: 'https://static1.srcdn.com/wordpress/wp-content/uploads/2024/12/imagery-from-squid-game-3.jpg?q=70&fit=crop&w=1100&h=618&dpr=1', caption: 'AI powering the world' },
               { type: 'paragraph', text: 'How AI is reshaping industries globally.' },
               { type: 'banner', text: '🚀 Innovation is the key! 🚀' },
               { type: 'paragraph', text: 'More to come soon...' }

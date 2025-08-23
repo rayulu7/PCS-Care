@@ -6,7 +6,7 @@ const BlogHero = () => {
       
       <div className="absolute inset-0">
         <img 
-          src="https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+          src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/10/Squid-Game-Front-Man.jpg?q=50&fit=crop&w=1100&h=618&dpr=1.5" 
           alt="Blog Hero" 
           className="w-full h-full object-cover"
         />
