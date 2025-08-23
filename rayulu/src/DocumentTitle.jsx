@@ -18,6 +18,10 @@ const pageTitles = {
   '/chair-cleaning': 'Best Office Chair Cleaning Services - PCS Care',
   '/pest-control': 'Best Pest Control Services - PCS Care',
   '/workstation-cleaning': 'Workstation, Pannel, Window Blinds, Rollers Cleaning Services - PCS Care',
+  '/login':'Login - PCS Care',
+  '/signup':'Signup - PCS Care',
+  '/forgot-password':'Forgot Password - PCS Care',
+  
   
 };
 
