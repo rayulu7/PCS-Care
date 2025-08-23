@@ -10,17 +10,17 @@ const HomeFlipCards = () => {
       lastBooking: "Last Booking on Aug 08, 2025.07.04am"
     },
     {
-      details: "2 Services / Year",
+      details: "3 Services / Year",
       price: "12.5% off",
       lastBooking: "Last Booking on Jul 08, 2025.04.47am"
     },
     {
-      details: "2 Services / Year",
+      details: "4 Services / Year",
       price: "15% off",
       lastBooking: "Last Booking on Jul 07, 2025.11.23am"
     },
     {
-      details: "2 Services / Year",
+      details: "6 Services / Year",
       price: "17.5% off",
       lastBooking: "Last Booking on Jul 06, 2025.09.15am"
     }
