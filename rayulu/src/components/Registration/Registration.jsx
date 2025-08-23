@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Register() {
     return (
@@ -9,11 +10,11 @@ export default function Register() {
                 <input id="email" className="w-full bg-transparent border my-3 border-gray-500/30 outline-none rounded-full py-2.5 px-4" type="email" placeholder="Enter your email" required />
                 <input id="password" className="w-full bg-transparent border mt-1 border-gray-500/30 outline-none rounded-full py-2.5 px-4" type="password" placeholder="Enter your password" required />
                 <div className="text-right py-4">
-                    <a className="text-blue-600 underline" href="#">Forgot Password</a>
+                    <Link to="/forgot-password" className="text-blue-600 underline">Forgot Password</Link>
                 </div>
                 <button type="submit" className="w-full mb-3 bg-orange-500 py-2.5 rounded-full text-white">Log in</button>
             </form>
-            <p className="text-center mt-4">Don’t have an account? <a href="#" className="text-blue-500 underline">Signup</a></p>
+            <p className="text-center mt-4">Don't have an account? <Link to="/signup" className="text-blue-500 underline">Signup</Link></p>
             <button type="button" className="w-full flex items-center gap-2 justify-center mt-5 bg-black py-2.5 rounded-full text-white">
                 <img className="h-4 w-4" src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/login/appleLogo.png" alt="appleLogo" />
                 Log in with Apple

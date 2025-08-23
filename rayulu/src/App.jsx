@@ -15,6 +15,8 @@ import ContactForm from './components/Form/Form';
 import Contact from './components/ContactUs/Contact';
 import About from './components/AboutUs/About';
 import Registration from './components/Registration/Registration';
+import Signup from './components/Registration/Signup';
+import ForgotPassword from './components/Registration/ForgotPassword';
 import ClientsCarousel from './components/OurClients/Clients';
 import TestimonialCarousel from './components/Testimonials/Testimonial';
 import CorporateCarpetCleaningService from './components/CorporateCarpetCleaning/CorporateCarpet';
@@ -184,7 +186,9 @@ const App = () => {
                 <Route path="/form" element={<ContactForm />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/login" element={<Registration />} />
+                <Route path="/signup" element={<Signup />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/forgot-password" element={<ForgotPassword />} />
                 <Route path="/Corporate-services/carpet-cleaning" element={<CorporateCarpetCleaningService />} />
                 <Route path="/home-services/carpet-cleaning" element={<Homecarpet />} />
                 <Route path="/home-services/marble-polishing" element={<HomeMarble />} />
@@ -201,14 +205,32 @@ const App = () => {
               </Routes>
             </MainContent>
 
-            <Stats />
-            <ClientsCarousel />
-            <TestimonialCarousel />
-            <Footer />
+            <RouteAwareComponents />
           </div>
         </BlogProvider>
       </BrowserRouter>
     </div>
+  );
+};
+
+const RouteAwareComponents = () => {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
+  // Exclude these components from login/register pages
+  const isAuthPage = currentPath === '/login' || currentPath === '/signup' || currentPath === '/forgot-password';
+
+  if (isAuthPage) {
+    return null;
+  }
+
+  return (
+    <>
+      <Stats />
+      <ClientsCarousel />
+      <TestimonialCarousel />
+      <Footer />
+    </>
   );
 };
 
