@@ -8,7 +8,7 @@ const HomeFlipCards = () => {
       details: "2 Services / Year",
       discount: "10% off",
       note: "pay 25% in advance",
-      lastBooking: "Last Booking on Aug 18",
+      lastBooking: "Last Booking on Aug 26",
     },
     {
       details: "3 Services / Year",
@@ -26,7 +26,7 @@ const HomeFlipCards = () => {
       details: "6 Services / Year",
       discount: "17.5% off",
       note: "pay 25% in advance",
-      lastBooking: "Last Booking on Aug 19",
+      lastBooking: "Last Booking on Aug 21",
     },
   ];
 
