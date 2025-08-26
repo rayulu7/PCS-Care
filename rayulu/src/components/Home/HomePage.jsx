@@ -6,7 +6,7 @@ import CorporateOfficialForm from "../CorporateCarpetCleaning/CorporateOfficialF
 
 const cardData = [
   {
-    image: './carpetCleaningService.jpg',
+    image: './carpet1.jpg',
     title: "Carpet Cleaning",
     description: "Make your carpets dust-free and allergen-free using our low moisture, eco-friendly and biodegradable chemicals.",
     path: "/Corporate-services/carpet-cleaning"
