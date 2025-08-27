@@ -2,24 +2,25 @@ import React from 'react';
 
 const BlogHero = () => {
   return (
-    <div className="relative h-96 bg-gray-800 overflow-hidden">
+    <div className="relative h-[60vh] md:h-[80vh] bg-gray-800 overflow-hidden">
       
+      {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/10/Squid-Game-Front-Man.jpg?q=50&fit=crop&w=1100&h=618&dpr=1.5" 
+          src="./Banner.jpg" 
           alt="Blog Hero" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       </div>
       
-      
-      <div className="relative z-10 flex items-center justify-center h-full">
+      {/* Content */}
+      <div className="relative z-10 flex items-center justify-center h-full px-4">
         <div className="text-center text-white">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 md:mb-4">
             Cleaning Tips & Insights
           </h1>
-          <p className="text-xl text-gray-200 max-w-2xl">
+          <p className="text-sm sm:text-base md:text-xl text-gray-200 max-w-xl md:max-w-2xl mx-auto">
             Expert advice and professional cleaning solutions
           </p>
         </div>

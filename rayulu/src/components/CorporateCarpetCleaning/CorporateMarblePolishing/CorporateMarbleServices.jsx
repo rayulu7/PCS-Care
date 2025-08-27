@@ -1,14 +1,12 @@
-
-
 const CorporateMarbleService = () => {
   return (
     <section id="mp1" className="bg-white py-12">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start justify-between px-[15px]">
 
         {/* LEFT TEXT BLOCK */}
-        <div className="w-[570px] h-[405px]">
+        <div className="w-full md:w-[570px] md:h-[405px]">
           <h2
-            className="text-[37px] font-bold mb-6"
+            className="text-[28px] md:text-[37px] font-bold mb-6"
             style={{
               color: '#1c1d3e',
               letterSpacing: '1px',
@@ -23,7 +21,7 @@ const CorporateMarbleService = () => {
           </h2>
 
           <p
-            className="text-[16px]"
+            className="text-[15px] md:text-[16px]"
             style={{
               fontWeight: 400,
               lineHeight: '27px',
@@ -38,11 +36,11 @@ const CorporateMarbleService = () => {
         </div>
 
         {/* RIGHT IMAGE BLOCK */}
-        <div className="w-[570px] h-[380px] mt-10 md:mt-0 ml-0 md:ml-6">
+        <div className="w-full md:w-[570px] mt-10 md:mt-0 md:ml-6">
           <img
-            src= "/polish_marble_service.jpg"
+            src="/polish_marble_service.jpg"
             alt="Marble Polishing"
-            className="w-[570px] h-[380px] object-cover rounded-md"
+            className="w-full h-auto md:w-[570px] md:h-[380px] object-cover rounded-md"
           />
         </div>
 
