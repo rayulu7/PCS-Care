@@ -7,43 +7,43 @@ import ChooseUs from "../Form/ChooseUs";
 
 const cardData = [
   {
-    image: './carpetCleaningService.jpg',
+    image: './CarpetService.jpg',
     title: "Carpet Cleaning",
     description: "Make your carpets dust-free and allergen-free using our low moisture, eco-friendly and biodegradable chemicals.",
     path: "/Corporate-services/carpet-cleaning"
   },
   {
-    image: './marblePolishingService.jpg',
+    image: './MarbleService.jpg',
     title: "Marble Polishing",
     description: "Our professional team restores the shine of your precious marble floor using the best chemicals and machinery.",
     path: "/marble-polishing"
   },
   {
-    image: './sofaCleaningService.jpg',
+    image: './SofaService.jpg',
     title: "Sofa Cleaning",
     description: "Get your sofas cleaned with Eco-Friendly Chemicals containing only 10% moisture to increase the life of Fabric.",
     path: "/sofa-cleaning"
   },
   {
-    image: './chairCleaningService.jpg',
+    image: './ChairService.jpg',
     title: "Chair Cleaning",
     description: "Get your Chair cleaned with Eco-Friendly Chemicals containing only 10% moisture to increase the life of Fabric.",
     path: "/chair-cleaning"
   },
   {
-    image: "./pestControlService.jpg",
+    image: "./PestService.jpg",
     title: "Pest Control",
     description: "Protect your office/Industry against pests by engaging our experts & professionals with 19+ years of experience.",
     path: "/pest-control"
   },
   {
-    image: "./workstationService.jpg",
+    image: "./WorkstationService.jpg",
     title: "Workstation Panels/Rollers",
     description: "PCS Care improves the Indoor Air Quality by making the panels/rollers allergen and dust free.",
     path: "/workstation-cleaning"
   },
   {
-    image: "./deepCleaningService.avif",
+    image: "./DeepService.jpg",
     title: "Deep Cleaning",
     description: "Our professional team ensures a clean and dust-free office atmosphere with optimum indoor air quality to increase employee productivity.",
     path: "/deep-cleaning"
