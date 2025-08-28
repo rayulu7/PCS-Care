@@ -44,7 +44,7 @@ export default function CorporateChairForm() {
     <div 
       className="min-h-screen py-12 px-4 font-poppins"
       style={{
-        backgroundImage: "url('/Banner.jpg')", // 🔥 replace with your actual banner
+        backgroundImage: "url('/ChairService.jpg')", 
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"

@@ -44,7 +44,7 @@ export default function CorporateSofaForm() {
     <div
       className="min-h-screen py-12 px-4 font-poppins"
       style={{
-        backgroundImage: "url('/Banner.jpg')",
+        backgroundImage: "url('/SofaService.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"

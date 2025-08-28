@@ -44,7 +44,7 @@ export default function CorporateWorkForm() {
     <div
       className="min-h-screen py-12 px-4 font-poppins"
       style={{
-        backgroundImage: "url('/Banner.jpg')",
+        backgroundImage: "url('/WorkstationService.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
