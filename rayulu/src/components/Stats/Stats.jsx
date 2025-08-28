@@ -128,7 +128,7 @@ const Stats = () => {
         {stats.map((stat, i) => (
           <div
             key={i}
-            className="flex flex-col items-center p-3 sm:p-4 bg-white/20 rounded-lg backdrop-blur-sm hover:bg-white/30 transition-all duration-300"
+            className="flex flex-col items-center p-3 sm:p-4  rounded-lg backdrop-blur-sm  transition-all duration-300"
           >
             {stat.icon}
             <div className="text-white text-xl sm:text-2xl md:text-3xl font-bold">
