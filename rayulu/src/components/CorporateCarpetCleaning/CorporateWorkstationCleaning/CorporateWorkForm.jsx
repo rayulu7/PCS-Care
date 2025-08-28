@@ -44,7 +44,7 @@ export default function CorporateWorkForm() {
     <div
       className="min-h-screen py-12 px-4 font-poppins"
       style={{
-        backgroundImage: "url('/WorkstationService.jpg')",
+        backgroundImage: "url('/workstationService.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
@@ -58,7 +58,7 @@ export default function CorporateWorkForm() {
             className="mb-8
               text-[32px] sm:text-[40px] md:text-[51px]
               font-bold
-              text-orange-400
+              text-orange-500
               leading-[42px] sm:leading-[60px] md:leading-[85px]
               mt-4 md:mt-0
             "
@@ -68,7 +68,7 @@ export default function CorporateWorkForm() {
             Rollers Cleaning <br />
             Services in India
           </h1>
-          <p className="mt-8 text-sm sm:text-base md:text-lg text-black leading-relaxed font-poppins">
+          <p className="mt-8 text-sm sm:text-base md:text-lg text-blue-950 font-bold leading-relaxed font-poppins">
             Get Best Corporate/Industrial Cleaning &amp; Maintenance Services on par with international standards using state-of-the-art machinery and chemicals.
           </p>
         </div>

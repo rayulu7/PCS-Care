@@ -58,7 +58,7 @@ export default function CorporateSofaForm() {
             className="mb-8
               text-[32px] sm:text-[40px] md:text-[51px]
               font-bold
-              text-orange-400
+              text-orange-500
               leading-[42px] sm:leading-[60px] md:leading-[85px]
               mt-4 md:mt-0
             "
@@ -68,7 +68,7 @@ export default function CorporateSofaForm() {
             Corporate & <br />
             Commercial Spaces
           </h1>
-          <p className="mt-8 text-sm sm:text-base md:text-lg font-poppins text-black leading-relaxed  p-4 rounded-lg inline-block">
+          <p className="mt-8 text-sm sm:text-base md:text-lg font-poppins font-bold text-blue-950 leading-relaxed  p-4 rounded-lg inline-block">
             Get Best Corporate/Industrial Cleaning &amp; Maintenance Services on par with international standards using state-of-the-art machinery and chemicals.
           </p>
         </div>
