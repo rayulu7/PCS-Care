@@ -81,6 +81,16 @@ const Navbar = () => {
     }));
   };
 
+  const combineFunctions = (...functions) => {
+  return () => {
+    functions.forEach(func => {
+      if (typeof func === 'function') {
+        func();
+      }
+    });
+  };
+};
+
   const handleDesktopDropdownLeave = (index) => {
     setDesktopDropdownOpen((prev) => ({
       ...prev,
@@ -162,7 +172,7 @@ const Navbar = () => {
                         {sublink.children && (
                           <div className="absolute top-0 left-full ml-1 bg-white shadow-xl rounded-lg border border-gray-100 py-2 z-50 min-w-60 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200">
                             {sublink.children?.map((child, k) => (
-                              <Link
+                              <Link onClick = {scrollToTop}
                                 key={k}
                                 to={child.path}
                                 className="block px-4 py-3 text-sm hover:bg-[#f47b00] hover:text-white text-gray-800 whitespace-nowrap transition-colors duration-200"
@@ -246,8 +256,9 @@ const Navbar = () => {
                   ) : (
                     <Link 
                       to={link.path} 
+                      
                       className="text-base sm:text-lg font-medium flex-1"
-                      onClick={(e) => !link.dropdown && closeAllMenus()}
+                      onClick={combineFunctions((e) => !link.dropdown && closeAllMenus() , scrollToTop)}
                     >
                       {link.name}
                     </Link>
