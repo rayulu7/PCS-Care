@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const cities = [
   "Hyderabad",
@@ -41,56 +41,65 @@ export default function CorporateWorkForm() {
   };
 
   return (
-    <div className="bg-black py-12 px-4 font-poppins">
+    <div
+      className="min-h-screen py-12 px-4 font-poppins"
+      style={{
+        backgroundImage: "url('/Banner.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+      }}
+    >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start">
-      
+        
+        {/* Left Content */}
         <div className="md:w-7/12 text-center md:text-left px-4">
           <h1
             className="mb-8
-              text-[51px]
-              font-extrabold
-              text-white
-              leading-[85px]
+              text-[32px] sm:text-[40px] md:text-[51px]
+              font-bold
+              text-orange-400
+              leading-[42px] sm:leading-[60px] md:leading-[85px]
               mt-4 md:mt-0
             "
           >
             Best Office Workstation<br />
-            Panels, Window Blinds & <br/>
+            Panels, Window Blinds & <br />
             Rollers Cleaning <br />
             Services in India
-            {/* &amp; */}
-            <br />
-            
           </h1>
-          <p className = "mt-8 text-base md:text-lg font-poppins text-white leading-relaxed">Get&nbsp; Best&nbsp; Corporate/Industrial&nbsp; Cleaning&nbsp; &&nbsp; Maintenance&nbsp; Services&nbsp; on &nbsp;par &nbsp;with&nbsp;&nbsp;  international&nbsp;&nbsp;  standards&nbsp; &nbsp; using&nbsp;&nbsp;  the&nbsp;&nbsp;  state-of-the-art&nbsp; machinery&nbsp; and&nbsp; chemicals</p>
-           
-          {/* <h4 className="text-[22px] text-white mt-6 tracking-wide">
-            Hyderabad &ndash; Bengaluru &ndash; Pune &ndash; Mumbai &ndash; Chennai
-          </h4> */}
+          <p className="mt-8 text-sm sm:text-base md:text-lg text-black leading-relaxed font-poppins">
+            Get Best Corporate/Industrial Cleaning &amp; Maintenance Services on par with international standards using state-of-the-art machinery and chemicals.
+          </p>
         </div>
 
-       
+        {/* Right Form */}
         <div
           className="
             mt-8 md:mt-0
-            md:w-[470px] w-full h-[590px]
+            md:w-[470px] w-full
             bg-white rounded-lg shadow-lg
-            p-8 overflow-auto
-            mx-4
+            p-6 md:p-8
+            overflow-auto
+            mx-0 md:mx-4
           "
         >
           <div className="flex justify-between items-center mb-4 sm:mb-6">
             <h2 className="text-lg sm:text-xl font-bold text-gray-800">
               Contact us
             </h2>
-            <Link 
-              to="/residential-services" 
+            <Link
+              to="/residential-services"
               className="text-xs sm:text-sm text-orange-600 hover:text-blue-800 cursor-pointer ml-2 whitespace-nowrap"
             >
               Click here for Residential
             </Link>
           </div>
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4" autoComplete="off">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-4"
+            autoComplete="off"
+          >
             <input
               type="text"
               name="name"
@@ -127,7 +136,9 @@ export default function CorporateWorkForm() {
             >
               <option value="">Choose City</option>
               {cities.map((city) => (
-                <option key={city} value={city}>{city}</option>
+                <option key={city} value={city}>
+                  {city}
+                </option>
               ))}
             </select>
             <select
@@ -139,7 +150,9 @@ export default function CorporateWorkForm() {
             >
               <option value="">Choose Service</option>
               {services.map((svc) => (
-                <option key={svc} value={svc}>{svc}</option>
+                <option key={svc} value={svc}>
+                  {svc}
+                </option>
               ))}
             </select>
             <button
