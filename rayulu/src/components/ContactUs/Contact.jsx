@@ -24,7 +24,7 @@ const Contact = () => {
   };
 
   return (
-    <section id = "contact-us" className="py-12 md:py-20 bg-gray-50">
+    <section id="contact-us" className="py-12 md:py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         {/* Contact Us Heading */}
         <div className="text-center mb-10 md:mb-16">
@@ -32,59 +32,10 @@ const Contact = () => {
             Know More
           </h2>
         </div>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          {/* Left Side - Contact Information */}
-          <div className="space-y-8 md:space-y-10">
-            {/* Header */}
-            <div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight sm:leading-snug">
-                Have Any Questions?
-                <br />
-                Let's Connect
-              </h2>
-              <p className="mt-4 text-base md:text-lg text-gray-600 max-w-lg">
-                We're here to help you. Reach out for inquiries, collaborations,
-                or support and we'll respond promptly.
-              </p>
-            </div>
-
-            {/* Contact Details */}
-            <div className="space-y-5 md:space-y-6">
-              {/* Phone */}
-              <div className="flex items-center space-x-4">
-                <div className="p-2 md:p-3 bg-orange-100 rounded-full">
-                  <Phone className="w-5 h-5 md:w-6 md:h-6 text-orange-600" />
-                </div>
-                <p className="text-base md:text-lg font-medium text-gray-800">
-                  +91-93926 12314 / 12
-                </p>
-              </div>
-
-              {/* Location */}
-              <div className="flex items-center space-x-4">
-                <div className="p-2 md:p-3 bg-orange-100 rounded-full">
-                  <MapPin className="w-5 h-5 md:w-6 md:h-6 text-orange-600" />
-                </div>
-                <p className="text-base md:text-lg font-medium text-gray-800">
-                  Mansoorabad, Hyderabad
-                </p>
-              </div>
-
-              {/* Email */}
-              <div className="flex items-center space-x-4">
-                <div className="p-2 md:p-3 bg-orange-100 rounded-full">
-                  <Mail className="w-5 h-5 md:w-6 md:h-6 text-orange-600" />
-                </div>
-                <p className="text-base md:text-lg font-medium text-gray-800">
-                  sales@pcscare.in
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Side - Contact Form */}
-          <div className="bg-white shadow-lg md:shadow-xl rounded-xl md:rounded-2xl p-6 sm:p-8 md:p-10 border border-gray-100">
+          {/* Contact Form - First on Mobile, Second on Desktop */}
+          <div className="order-1 lg:order-2 bg-white shadow-lg md:shadow-xl rounded-xl md:rounded-2xl p-6 sm:p-8 md:p-10 border border-gray-100">
             <form onSubmit={handleSubmit} className="space-y-5 md:space-y-6">
               {/* Requirement */}
               <div>
@@ -146,6 +97,55 @@ const Contact = () => {
                 Send Message
               </button>
             </form>
+          </div>
+
+          {/* Contact Information - Second on Mobile, First on Desktop */}
+          <div className="order-2 lg:order-1 space-y-8 md:space-y-10">
+            {/* Header */}
+            <div>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight sm:leading-snug">
+                Have Any Questions?
+                <br />
+                Let's Connect
+              </h2>
+              <p className="mt-4 text-base md:text-lg text-gray-600 max-w-lg">
+                We're here to help you. Reach out for inquiries, collaborations,
+                or support and we'll respond promptly.
+              </p>
+            </div>
+
+            {/* Contact Details */}
+            <div className="space-y-5 md:space-y-6">
+              {/* Phone */}
+              <div className="flex items-center space-x-4">
+                <div className="p-2 md:p-3 bg-orange-100 rounded-full">
+                  <Phone className="w-5 h-5 md:w-6 md:h-6 text-orange-600" />
+                </div>
+                <p className="text-base md:text-lg font-medium text-gray-800">
+                  +91-93926 12314 / 12
+                </p>
+              </div>
+
+              {/* Location */}
+              <div className="flex items-center space-x-4">
+                <div className="p-2 md:p-3 bg-orange-100 rounded-full">
+                  <MapPin className="w-5 h-5 md:w-6 md:h-6 text-orange-600" />
+                </div>
+                <p className="text-base md:text-lg font-medium text-gray-800">
+                  Mansoorabad, Hyderabad
+                </p>
+              </div>
+
+              {/* Email */}
+              <div className="flex items-center space-x-4">
+                <div className="p-2 md:p-3 bg-orange-100 rounded-full">
+                  <Mail className="w-5 h-5 md:w-6 md:h-6 text-orange-600" />
+                </div>
+                <p className="text-base md:text-lg font-medium text-gray-800">
+                  sales@pcscare.in
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
