@@ -35,7 +35,15 @@ export default function CorporateOfficialForm() {
   };
 
   return (
-    <div className="bg-black min-h-screen py-8 sm:py-12 px-4 font-poppins">
+    <div 
+      className="min-h-screen py-8 sm:py-12 px-4 font-poppins"
+      style={{
+        backgroundImage: "url('/Banner.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+      }}
+    >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center">
         
         {/* Left Content */}
@@ -45,7 +53,7 @@ export default function CorporateOfficialForm() {
               mb-4 sm:mb-8
               text-[32px] sm:text-[40px] md:text-[51px]
               font-extrabold
-              text-white
+              text-orange-400
               leading-[42px] sm:leading-[60px] md:leading-[85px]
               mt-4 md:mt-0
             "
@@ -55,7 +63,7 @@ export default function CorporateOfficialForm() {
             <br />
             2005
           </h1>
-          <p className="mt-4 sm:mt-8 text-sm sm:text-base md:text-lg text-white leading-relaxed">
+          <p className="mt-4 sm:mt-8 text-sm sm:text-base md:text-lg text-black leading-relaxed">
             Get Best Corporate/Industrial Cleaning &amp; Maintenance Services on par with international standards using state-of-the-art machinery and chemicals
           </p>
         </div>
