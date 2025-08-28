@@ -36,7 +36,7 @@ const cardData = [
     path: "/pest-control"
   },
   {
-    image: "./WorkstationService.jpg",
+    image: "./workstationService.jpg",
     title: "Workstation Panels/Rollers",
     description: "PCS Care improves the Indoor Air Quality by making the panels/rollers allergen and dust free.",
     path: "/workstation-cleaning"
