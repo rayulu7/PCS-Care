@@ -11,10 +11,12 @@ import HomePage from './HomePage';
 
 import Contact from '../ContactUs/Contact';
 import About from '../AboutUs/About';
+import ScrollToTop from '../../context/ScrollToTop';
 
 const Home = () => {
   return (
     <div>
+      
       
       <div className="flex flex-col items-center justify-center min-h-screen   py-4">
         {/* <Banner /> */}

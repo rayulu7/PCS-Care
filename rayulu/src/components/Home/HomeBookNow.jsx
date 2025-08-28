@@ -7,25 +7,25 @@ const HomeFlipCards = () => {
     {
       details: "2 Services / Year",
       discount: "10% off",
-      note: "pay 25% in advance",
+      note: "#contact-us",
       lastBooking: "Last Booking on Aug 26",
     },
     {
       details: "3 Services / Year",
       discount: "12.5% off",
-      note: "pay 25% in advance",
+      note: "#contact-us",
       lastBooking: "Last Booking on Aug 23",
     },
     {
       details: "4 Services / Year",
       discount: "15% off",
-      note: "pay 25% in advance",
+      note: "#contact-us",
       lastBooking: "Last Booking on Aug 25",
     },
     {
       details: "6 Services / Year",
       discount: "17.5% off",
-      note: "pay 25% in advance",
+      note: "#contact-us",
       lastBooking: "Last Booking on Aug 21",
     },
   ];
@@ -86,9 +86,12 @@ const HomeFlipCards = () => {
                     <p className="text-xl sm:text-2xl font-extrabold font-poppins text-orange-400">
                       {service.discount}
                     </p>
-                    <p className="text-xs sm:text-sm text-gray-300 font-poppins mt-1">
-                      {service.note}
-                    </p>
+                    <a
+                      href={service.note}
+                      className="inline-block bg-orange-500 font-poppins hover:bg-orange-600 text-white py-1 px-4 rounded-full text-xs sm:text-sm mt-2 transition-colors"
+                    >
+                      Know More
+                    </a>
                   </div>
                 </div>
 
@@ -105,10 +108,10 @@ const HomeFlipCards = () => {
                       Book Now
                     </button>
                     <a
-                      href="#"
+                      href="#contact-us"
                       className="text-orange-500 font-poppins hover:underline text-xs sm:text-sm"
                     >
-                      Click Here To Read More
+                      Click Here To Know More
                     </a>
                   </div>
                 </div>
