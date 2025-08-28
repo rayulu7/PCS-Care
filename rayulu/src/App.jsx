@@ -35,6 +35,7 @@ import CorporateChairService from './components/CorporateCarpetCleaning/Corporat
 import CorporatePestService from './components/CorporateCarpetCleaning/CorporatePestControl/CorporatePestPage';
 import CorporateWorkService from './components/CorporateCarpetCleaning/CorporateWorkstationCleaning/CorporateWorkPage';
 import CorporateDeepService from './components/CorporateCarpetCleaning/CorporateDeepCleaning/CorporateDeepPage';
+import ScrollToTopEffect from './context/ScrollToTop';
 
 
 const CONTACT_ICONS = [
@@ -172,8 +173,10 @@ const MainContent = ({ children }) => {
 const App = () => {
   return (
     <div className="overflow-x-hidden">
+      
       <BrowserRouter>
         <BlogProvider>
+          <ScrollToTopEffect />
           <ScrollToTop />
           <DocumentTitle />
           <div className="relative max-w-[100vw]">

@@ -63,6 +63,13 @@ const Navbar = () => {
     }));
   };
 
+  const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
   const toggleMobileDeepCleaning = () => {
     setMobileDeepCleaningOpen(!mobileDeepCleaningOpen);
   };
@@ -99,7 +106,7 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-between px-3 sm:px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32 max-w-7xl mx-auto">
           
-          <Link to="/" className="flex items-center gap-2 flex-shrink-0">
+          <Link to="/" onClick={scrollToTop} className="flex items-center gap-2 flex-shrink-0">
             <img 
               src="/logo.png" 
               className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 object-contain" 
@@ -125,7 +132,7 @@ const Navbar = () => {
                     {link.dropdown && <FiChevronDown className="ml-1 text-sm" />}
                   </a>
                 ) : (
-                  <Link
+                  <Link onClick={scrollToTop}
                     to={link.path}
                     className="flex items-center font-['League_Spartan'] text-base xl:text-lg font-medium hover:text-[#f47b00] transition-colors duration-200 py-2 px-2"
                   >
@@ -139,7 +146,7 @@ const Navbar = () => {
                     {link.sublinks?.map((sublink, j) => (
                       <div key={j} className="relative group/sub">
                         <div className="flex justify-between items-center hover:bg-[#f47b00] hover:text-white">
-                          <Link
+                          <Link onClick = {scrollToTop}
                             to={sublink.path}
                             className="flex-1 px-4 py-3 text-sm text-gray-800 hover:text-white transition-colors duration-200 whitespace-nowrap"
                           >
