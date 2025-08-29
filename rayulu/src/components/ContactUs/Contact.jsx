@@ -26,7 +26,7 @@ const Contact = () => {
   return (
     <section id="contact-us" className="py-12 md:py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-        {/* Contact Us Heading */}
+       
         <div className="text-center mb-10 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-orange-500">
             Know More
@@ -34,10 +34,10 @@ const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          {/* Contact Form - First on Mobile, Second on Desktop */}
+          
           <div className="order-1 lg:order-2 bg-white shadow-lg md:shadow-xl rounded-xl md:rounded-2xl p-6 sm:p-8 md:p-10 border border-gray-100">
             <form onSubmit={handleSubmit} className="space-y-5 md:space-y-6">
-              {/* Requirement */}
+              
               <div>
                 <textarea
                   name="requirement"
@@ -49,7 +49,7 @@ const Contact = () => {
                 />
               </div>
 
-              {/* Name + Email */}
+              
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                 <input
                   type="text"
@@ -69,7 +69,7 @@ const Contact = () => {
                 />
               </div>
 
-              {/* Phone + City */}
+              
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                 <input
                   type="tel"
@@ -89,7 +89,7 @@ const Contact = () => {
                 />
               </div>
 
-              {/* Submit */}
+              
               <button
                 type="submit"
                 className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 md:py-4 px-6 rounded-lg md:rounded-xl shadow-md md:shadow-lg transition-all duration-200 text-sm md:text-base"
@@ -99,9 +99,9 @@ const Contact = () => {
             </form>
           </div>
 
-          {/* Contact Information - Second on Mobile, First on Desktop */}
+          
           <div className="order-2 lg:order-1 space-y-8 md:space-y-10">
-            {/* Header */}
+            
             <div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight sm:leading-snug">
                 Have Any Questions?
@@ -114,9 +114,9 @@ const Contact = () => {
               </p>
             </div>
 
-            {/* Contact Details */}
+        
             <div className="space-y-5 md:space-y-6">
-              {/* Phone */}
+             
               <div className="flex items-center space-x-4">
                 <div className="p-2 md:p-3 bg-orange-100 rounded-full">
                   <Phone className="w-5 h-5 md:w-6 md:h-6 text-orange-600" />
@@ -126,7 +126,7 @@ const Contact = () => {
                 </p>
               </div>
 
-              {/* Location */}
+           
               <div className="flex items-center space-x-4">
                 <div className="p-2 md:p-3 bg-orange-100 rounded-full">
                   <MapPin className="w-5 h-5 md:w-6 md:h-6 text-orange-600" />
@@ -136,7 +136,7 @@ const Contact = () => {
                 </p>
               </div>
 
-              {/* Email */}
+              
               <div className="flex items-center space-x-4">
                 <div className="p-2 md:p-3 bg-orange-100 rounded-full">
                   <Mail className="w-5 h-5 md:w-6 md:h-6 text-orange-600" />
