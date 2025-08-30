@@ -14,7 +14,6 @@ const services = [
   "Marble Polishing",
   "Sofa Cleaning",
   "Deep Cleaning",
-  "Chair Cleaning",
   "Pest Control",
   "Workstation panels/Rollers/Blinds Cleaning"
 ];
@@ -25,7 +24,7 @@ export default function CorporateChairForm() {
     phone: "",
     email: "",
     city: "",
-    service: ""
+    service: "Chair Cleaning"
   });
 
   const handleChange = (e) => {
@@ -138,15 +137,14 @@ export default function CorporateChairForm() {
             </select>
             <select
               name="service"
-              required
+              
               className="border rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-gray-100"
               value={form.service}
               onChange={handleChange}
             >
-              <option value="">Choose Service</option>
-              {services.map((svc) => (
-                <option key={svc} value={svc}>{svc}</option>
-              ))}
+              {["Chair Cleaning", ...services].map((svc) => (
+    <option key={svc} value={svc}>{svc}</option>
+  ))}
             </select>
             <button
               type="submit"

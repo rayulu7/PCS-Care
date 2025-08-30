@@ -11,7 +11,6 @@ const cities = [
 
 const services = [
   "Carpet Cleaning",
-  "Marble Polishing",
   "Sofa Cleaning",
   "Deep Cleaning",
   "Chair Cleaning",
@@ -25,7 +24,7 @@ export default function CorporateMarbleForm() {
     phone: "",
     email: "",
     city: "",
-    service: ""
+    service: "Marble Polishing",
   });
 
   const handleChange = (e) => {
@@ -138,15 +137,14 @@ export default function CorporateMarbleForm() {
             </select>
             <select
               name="service"
-              required
+            
               className="border rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-gray-100"
               value={form.service}
               onChange={handleChange}
             >
-              <option value="">Choose Service</option>
-              {services.map((svc) => (
-                <option key={svc} value={svc}>{svc}</option>
-              ))}
+              {["Marble Polishing", ...services].map((svc) => (
+    <option key={svc} value={svc}>{svc}</option>
+  ))}
             </select>
             <button
               type="submit"

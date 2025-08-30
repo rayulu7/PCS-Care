@@ -15,8 +15,7 @@ const services = [
   "Sofa Cleaning",
   "Deep Cleaning",
   "Chair Cleaning",
-  "Pest Control",
-  "Workstation panels/Rollers/Blinds Cleaning"
+  "Workstation panels/Rollers/Blinds Cleaning",
 ];
 
 export default function CorporatePestForm() {
@@ -25,7 +24,7 @@ export default function CorporatePestForm() {
     phone: "",
     email: "",
     city: "",
-    service: ""
+    service: "Pest Control",
   });
 
   const handleChange = (e) => {
@@ -143,10 +142,9 @@ export default function CorporatePestForm() {
               value={form.service}
               onChange={handleChange}
             >
-              <option value="">Choose Service</option>
-              {services.map((svc) => (
-                <option key={svc} value={svc}>{svc}</option>
-              ))}
+              {["Pest Control", ...services].map((svc) => (
+    <option key={svc} value={svc}>{svc}</option>
+  ))}
             </select>
             <button
               type="submit"

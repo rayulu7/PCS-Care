@@ -12,7 +12,7 @@ const cities = [
 const services = [
   "Carpet Cleaning",
   "Marble Polishing",
-  "Sofa Cleaning",
+  
   "Deep Cleaning",
   "Chair Cleaning",
   "Pest Control",
@@ -25,7 +25,7 @@ export default function CorporateSofaForm() {
     phone: "",
     email: "",
     city: "",
-    service: ""
+    service: "Sofa Cleaning",
   });
 
   const handleChange = (e) => {
@@ -143,17 +143,14 @@ export default function CorporateSofaForm() {
             </select>
             <select
               name="service"
-              required
+              
               className="border rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-gray-100"
               value={form.service}
               onChange={handleChange}
             >
-              <option value="">Choose Service</option>
-              {services.map((svc) => (
-                <option key={svc} value={svc}>
-                  {svc}
-                </option>
-              ))}
+              {["Sofa Cleaning", ...services].map((svc) => (
+    <option key={svc} value={svc}>{svc}</option>
+  ))}
             </select>
             <button
               type="submit"
